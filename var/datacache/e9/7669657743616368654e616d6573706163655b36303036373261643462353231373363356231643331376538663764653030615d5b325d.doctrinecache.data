@@ -1,4 +1,4 @@
-1573529804
+1573799557
 s:2390:"O:34:"XLite\Core\View\DTO\RenderedWidget":3:{s:7:"content";s:2280:"<a href="#" class=" sales-channels" data-toggle="tooltip" data-placement="bottom" title="Add sales channel">
   <script type="text/x-cart-data">
 {"url_params":{"target":"addons_list_sales_channels","widget":"XLite\\View\\SalesChannels"}}

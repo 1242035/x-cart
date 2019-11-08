@@ -22,7 +22,7 @@ port = "3306"
 database = "xcart"
 username = "root"
 password = "123456"
-table_prefix = "xc_"
+table_prefix = "vs_"
 charset = "utf8mb4"
 
 ;
@@ -218,8 +218,8 @@ image_magick_path =
 ; Installation authcode is created authomatically and stored in this section.
 ;
 [installer_details]
-auth_code = "RQVNBHO6D4CHXG2B1WUDSY3GD7F6JS4T"
-shared_secret_key = "5dc0ea36be2ec7.36655647"
+auth_code = "VHUH7QZU7AOR5NZWFZJR43FM1HKLTAEK"
+shared_secret_key = "5dc5094fe3efe0.85872487"
 
 ;
 ; Some options to optimize the store
