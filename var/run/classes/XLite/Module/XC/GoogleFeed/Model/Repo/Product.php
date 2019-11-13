@@ -11,7 +11,7 @@ namespace XLite\Module\XC\GoogleFeed\Model\Repo;
 /**
  * Products repository
  */
-abstract class Product extends \XLite\Module\XC\NextPreviousProduct\Model\Repo\Product implements \XLite\Base\IDecorator
+abstract class Product extends \XLite\Module\XC\Onboarding\Model\Repo\Product implements \XLite\Base\IDecorator
 {
     /**
      * Define sitemap generation iterator query builder

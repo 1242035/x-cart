@@ -10,7 +10,7 @@ namespace XLite\Module\QSL\CloudSearch\Controller\Admin;
 /**
  * Module settings
  */
- class Module extends \XLite\Module\XC\Geolocation\Controller\Admin\Module implements \XLite\Base\IDecorator
+ class Module extends \XLite\Controller\Admin\ModuleAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Return the current page title (for the content area)

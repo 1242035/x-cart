@@ -12,7 +12,7 @@ namespace XLite\Module\XC\FacebookMarketing\Model;
 /**
  * The "product" model class
  */
- class Product extends \XLite\Module\XC\FreeShipping\Model\Product implements \XLite\Base\IDecorator
+ class Product extends \XLite\Module\XC\GoogleFeed\Model\Product implements \XLite\Base\IDecorator
 {
     /**
      * Product is available for Facebook Marketing feed

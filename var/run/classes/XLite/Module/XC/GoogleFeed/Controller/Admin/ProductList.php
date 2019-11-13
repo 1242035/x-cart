@@ -12,7 +12,7 @@ namespace XLite\Module\XC\GoogleFeed\Controller\Admin;
 /**
  * Products list controller
  */
- class ProductList extends \XLite\Module\XC\ProductFilter\Controller\Admin\ProductList implements \XLite\Base\IDecorator
+ class ProductList extends \XLite\Controller\Admin\ProductListAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Enable feed for products

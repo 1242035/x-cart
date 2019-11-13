@@ -11,7 +11,7 @@ namespace XLite\Module\CDev\GoSocial\View\Product\Details\Customer\Page;
 /**
  * Abstract product page
  */
-abstract class APage extends \XLite\Module\CDev\ProductAdvisor\View\Details implements \XLite\Base\IDecorator
+abstract class APage extends \XLite\View\Product\Details\Customer\Page\APageAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Process global tab addition into list

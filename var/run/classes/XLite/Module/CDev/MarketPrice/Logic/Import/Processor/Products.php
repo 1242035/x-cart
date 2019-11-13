@@ -11,7 +11,7 @@ namespace XLite\Module\CDev\MarketPrice\Logic\Import\Processor;
 /**
  * Products
  */
-abstract class Products extends \XLite\Module\CDev\PINCodes\Logic\Import\Processor\Products implements \XLite\Base\IDecorator
+abstract class Products extends \XLite\Module\XC\FacebookMarketing\Logic\Import\Processor\Products implements \XLite\Base\IDecorator
 {
     /**
      * Get messages

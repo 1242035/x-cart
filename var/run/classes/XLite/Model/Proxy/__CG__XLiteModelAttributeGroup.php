@@ -206,17 +206,6 @@ class AttributeGroup extends \XLite\Model\AttributeGroup implements \Doctrine\OR
     /**
      * {@inheritDoc}
      */
-    public function hasNonEmptyAttributes()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'hasNonEmptyAttributes', []);
-
-        return parent::hasNonEmptyAttributes();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function getAttributesCount()
     {
 

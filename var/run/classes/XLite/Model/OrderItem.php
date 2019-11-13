@@ -16,6 +16,5 @@ namespace XLite\Model;
  * @InheritanceType       ("SINGLE_TABLE")
  * @DiscriminatorColumn   (name="object_type", type="string", length=16)
  * @DiscriminatorMap      ({"product" = "XLite\Model\OrderItem"})
- * @HasLifecycleCallbacks
  */
-class OrderItem extends \XLite\Module\CDev\Egoods\Model\OrderItem {}
+class OrderItem extends \XLite\Module\CDev\GoogleAnalytics\Model\OrderItem {}

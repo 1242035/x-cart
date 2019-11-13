@@ -14,7 +14,7 @@ use XLite\Module\XC\Concierge\Core\Track\ShippingMethod;
 /**
  * Payment method
  */
-abstract class Method extends \XLite\Module\XC\FreeShipping\Model\Shipping\Method implements \XLite\Base\IDecorator
+abstract class Method extends \XLite\Model\Shipping\MethodAbstract implements \XLite\Base\IDecorator
 {
     /**
      * @param boolean $value

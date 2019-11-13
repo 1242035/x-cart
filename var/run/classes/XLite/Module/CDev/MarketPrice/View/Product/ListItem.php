@@ -12,7 +12,7 @@ namespace XLite\Module\CDev\MarketPrice\View\Product;
 /**
  * Product list item widget
  */
- class ListItem extends \XLite\Module\CDev\ProductAdvisor\View\Product\ListItem implements \XLite\Base\IDecorator
+ class ListItem extends \XLite\Module\XC\FacebookMarketing\View\Product\ListItem implements \XLite\Base\IDecorator
 {
     /**
      * Return product labels

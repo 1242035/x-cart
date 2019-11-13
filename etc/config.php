@@ -218,8 +218,8 @@ image_magick_path =
 ; Installation authcode is created authomatically and stored in this section.
 ;
 [installer_details]
-auth_code = "VHUH7QZU7AOR5NZWFZJR43FM1HKLTAEK"
-shared_secret_key = "5dc5094fe3efe0.85872487"
+auth_code = "BL3R9R6PJGZ21FJASUQM8S3GKZUX8QAD"
+shared_secret_key = "5dca5b48ab3974.73148340"
 
 ;
 ; Some options to optimize the store
@@ -228,7 +228,7 @@ shared_secret_key = "5dc5094fe3efe0.85872487"
 developer_mode = Off
 
 ; Enable to cache resource paths
-skins_cache = off
+skins_cache = on
 
 ;
 ; Decorator options

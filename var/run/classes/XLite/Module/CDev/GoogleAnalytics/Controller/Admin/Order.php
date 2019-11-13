@@ -13,7 +13,7 @@ use XLite\Module\CDev\GoogleAnalytics\Logic\BackendActionExecutor;
 use XLite\Module\CDev\GoogleAnalytics\Logic\DataMapper\OrderItemDataMapper;
 use XLite\Model\Order\Status;
 
- class Order extends \XLite\Module\CDev\PINCodes\Controller\Admin\Order implements \XLite\Base\IDecorator
+ class Order extends \XLite\Module\CDev\SalesTax\Controller\Admin\Order implements \XLite\Base\IDecorator
 {
     /**
      * @inheritdoc

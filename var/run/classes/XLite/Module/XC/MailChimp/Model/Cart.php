@@ -16,7 +16,7 @@ use XLite\Module\XC\MailChimp\Main;
 /**
  * Class represents an order
  */
-abstract class Cart extends \XLite\Module\XC\NotFinishedOrders\Model\Cart implements \XLite\Base\IDecorator
+abstract class Cart extends \XLite\Model\CartAbstract implements \XLite\Base\IDecorator
 {
     protected static $mcNewCartFlag;
 

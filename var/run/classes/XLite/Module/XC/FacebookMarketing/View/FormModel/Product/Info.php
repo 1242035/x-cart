@@ -12,7 +12,7 @@ namespace XLite\Module\XC\FacebookMarketing\View\FormModel\Product;
 /**
  * Product form model
  */
- class Info extends \XLite\Module\XC\FreeShipping\View\FormModel\Product\Info implements \XLite\Base\IDecorator
+ class Info extends \XLite\Module\XC\GoogleFeed\View\FormModel\Product\Info implements \XLite\Base\IDecorator
 {
     /**
      * @return array

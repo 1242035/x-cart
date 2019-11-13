@@ -94,10 +94,10 @@ class CleanURL extends \XLite\Model\CleanURL implements \Doctrine\ORM\Proxy\Prox
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'page', 'newsMessage', 'id', 'product', 'category', 'cleanURL', '_previous_state'];
+            return ['__isInitialized__', 'page', 'id', 'product', 'category', 'cleanURL', '_previous_state'];
         }
 
-        return ['__isInitialized__', 'page', 'newsMessage', 'id', 'product', 'category', 'cleanURL', '_previous_state'];
+        return ['__isInitialized__', 'page', 'id', 'product', 'category', 'cleanURL', '_previous_state'];
     }
 
     /**
@@ -223,28 +223,6 @@ class CleanURL extends \XLite\Model\CleanURL implements \Doctrine\ORM\Proxy\Prox
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPage', []);
 
         return parent::getPage();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setNewsMessage(\XLite\Module\XC\News\Model\NewsMessage $newsMessage = NULL)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setNewsMessage', [$newsMessage]);
-
-        return parent::setNewsMessage($newsMessage);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getNewsMessage()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getNewsMessage', []);
-
-        return parent::getNewsMessage();
     }
 
     /**

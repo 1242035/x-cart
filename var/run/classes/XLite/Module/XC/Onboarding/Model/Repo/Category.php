@@ -11,7 +11,7 @@ namespace XLite\Module\XC\Onboarding\Model\Repo;
 /**
  * The "product" model repository
  */
- class Category extends \XLite\Module\XC\ProductTags\Model\Repo\Category implements \XLite\Base\IDecorator
+ class Category extends \XLite\Module\XC\RESTAPI\Model\Repo\Category implements \XLite\Base\IDecorator
 {
     public function getDemoEntitiesCount()
     {

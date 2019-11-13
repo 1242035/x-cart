@@ -94,10 +94,10 @@ class OrderItem extends \XLite\Model\OrderItem implements \Doctrine\ORM\Proxy\Pr
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'privateAttachments', 'categoryAdded', 'pinCodes', 'shippingCost', 'capostParcelItems', 'capostReturnItems', 'customerAttachments', 'xpaymentsEmulated', 'item_id', 'object', 'name', 'sku', 'price', 'itemNetPrice', 'discountedSubtotal', 'amount', 'backorderedAmount', 'order', 'surcharges', 'dumpProduct', 'attributeValues', 'total', 'subtotal', '_previous_state'];
+            return ['__isInitialized__', 'categoryAdded', 'shippingCost', 'capostParcelItems', 'capostReturnItems', 'xpaymentsEmulated', 'item_id', 'object', 'name', 'sku', 'price', 'itemNetPrice', 'discountedSubtotal', 'amount', 'backorderedAmount', 'order', 'surcharges', 'dumpProduct', 'attributeValues', 'total', 'subtotal', '_previous_state'];
         }
 
-        return ['__isInitialized__', 'privateAttachments', 'categoryAdded', 'pinCodes', 'shippingCost', 'capostParcelItems', 'capostReturnItems', 'customerAttachments', 'xpaymentsEmulated', 'item_id', 'object', 'name', 'sku', 'price', 'itemNetPrice', 'discountedSubtotal', 'amount', 'backorderedAmount', 'order', 'surcharges', 'dumpProduct', 'attributeValues', 'total', 'subtotal', '_previous_state'];
+        return ['__isInitialized__', 'categoryAdded', 'shippingCost', 'capostParcelItems', 'capostReturnItems', 'xpaymentsEmulated', 'item_id', 'object', 'name', 'sku', 'price', 'itemNetPrice', 'discountedSubtotal', 'amount', 'backorderedAmount', 'order', 'surcharges', 'dumpProduct', 'attributeValues', 'total', 'subtotal', '_previous_state'];
     }
 
     /**
@@ -206,50 +206,6 @@ class OrderItem extends \XLite\Model\OrderItem implements \Doctrine\ORM\Proxy\Pr
     /**
      * {@inheritDoc}
      */
-    public function getDownloadAttachments($availableOnly = true)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getDownloadAttachments', [$availableOnly]);
-
-        return parent::getDownloadAttachments($availableOnly);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function createPrivateAttachments()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'createPrivateAttachments', []);
-
-        return parent::createPrivateAttachments();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addPrivateAttachments(\XLite\Module\CDev\Egoods\Model\OrderItem\PrivateAttachment $privateAttachments)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addPrivateAttachments', [$privateAttachments]);
-
-        return parent::addPrivateAttachments($privateAttachments);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getPrivateAttachments()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPrivateAttachments', []);
-
-        return parent::getPrivateAttachments();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function getCategoryAdded()
     {
 
@@ -278,127 +234,6 @@ class OrderItem extends \XLite\Model\OrderItem implements \Doctrine\ORM\Proxy\Pr
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEventCell', []);
 
         return parent::getEventCell();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isCustomerInterface()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isCustomerInterface', []);
-
-        return parent::isCustomerInterface();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function countPinCodes()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'countPinCodes', []);
-
-        return parent::countPinCodes();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getSoldPinCodes()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSoldPinCodes', []);
-
-        return parent::getSoldPinCodes();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function countMissingPinCodes()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'countMissingPinCodes', []);
-
-        return parent::countMissingPinCodes();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function acquirePinCodes()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'acquirePinCodes', []);
-
-        return parent::acquirePinCodes();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getAutoPinCodes(\XLite\Model\Product $product, $amount)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getAutoPinCodes', [$product, $amount]);
-
-        return parent::getAutoPinCodes($product, $amount);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function salePinCodes()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'salePinCodes', []);
-
-        return parent::salePinCodes();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function releasePINCodes()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'releasePINCodes', []);
-
-        return parent::releasePINCodes();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addPinCodes(\XLite\Module\CDev\PINCodes\Model\PinCode $pinCodes)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addPinCodes', [$pinCodes]);
-
-        return parent::addPinCodes($pinCodes);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getPinCodes()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPinCodes', []);
-
-        return parent::getPinCodes();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function releaseBackorder()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'releaseBackorder', []);
-
-        return parent::releaseBackorder();
     }
 
     /**
@@ -487,94 +322,6 @@ class OrderItem extends \XLite\Model\OrderItem implements \Doctrine\ORM\Proxy\Pr
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCapostReturnItems', []);
 
         return parent::getCapostReturnItems();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isCustomerAttachable()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isCustomerAttachable', []);
-
-        return parent::isCustomerAttachable();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isCustomerAttachmentsRequired()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isCustomerAttachmentsRequired', []);
-
-        return parent::isCustomerAttachmentsRequired();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getCustomerAttachments()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCustomerAttachments', []);
-
-        return parent::getCustomerAttachments();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getKey()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getKey', []);
-
-        return parent::getKey();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isConfigured()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isConfigured', []);
-
-        return parent::isConfigured();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addCustomerAttachments(\XLite\Module\XC\CustomerAttachments\Model\OrderItem\Attachment\Attachment $customerAttachments)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addCustomerAttachments', [$customerAttachments]);
-
-        return parent::addCustomerAttachments($customerAttachments);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isFreeShipping()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isFreeShipping', []);
-
-        return parent::isFreeShipping();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isShipForFree()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isShipForFree', []);
-
-        return parent::isShipForFree();
     }
 
     /**
@@ -987,6 +734,17 @@ class OrderItem extends \XLite\Model\OrderItem implements \Doctrine\ORM\Proxy\Pr
     /**
      * {@inheritDoc}
      */
+    public function getKey()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getKey', []);
+
+        return parent::getKey();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function getAttributeValuesIds()
     {
 
@@ -1037,6 +795,17 @@ class OrderItem extends \XLite\Model\OrderItem implements \Doctrine\ORM\Proxy\Pr
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSortedAttributeValues', [$limit]);
 
         return parent::getSortedAttributeValues($limit);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function isConfigured()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isConfigured', []);
+
+        return parent::isConfigured();
     }
 
     /**
@@ -1433,6 +1202,17 @@ class OrderItem extends \XLite\Model\OrderItem implements \Doctrine\ORM\Proxy\Pr
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getAttributeValues', []);
 
         return parent::getAttributeValues();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function releaseBackorder()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'releaseBackorder', []);
+
+        return parent::releaseBackorder();
     }
 
     /**

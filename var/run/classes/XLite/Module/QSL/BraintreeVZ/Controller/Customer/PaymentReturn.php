@@ -12,7 +12,7 @@ namespace XLite\Module\QSL\BraintreeVZ\Controller\Customer;
  * Return to the store after payment
  *
  */
- class PaymentReturn extends \XLite\Module\XC\NotFinishedOrders\Controller\Customer\PaymentReturn implements \XLite\Base\IDecorator
+ class PaymentReturn extends \XLite\Controller\Customer\PaymentReturnAbstract implements \XLite\Base\IDecorator
 {
 
     /**

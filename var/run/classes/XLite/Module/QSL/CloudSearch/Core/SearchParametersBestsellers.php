@@ -16,7 +16,7 @@ use XLite\Module\QSL\CloudSearch\Model\Repo\Product;
  *
  * @Decorator\Depend({"CDev\Bestsellers"})
  */
- class SearchParametersBestsellers extends \XLite\Module\QSL\CloudSearch\Core\SearchParametersProductAdvisor implements \XLite\Base\IDecorator
+ class SearchParametersBestsellers extends \XLite\Module\QSL\CloudSearch\Core\SearchParametersAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Get search parameters

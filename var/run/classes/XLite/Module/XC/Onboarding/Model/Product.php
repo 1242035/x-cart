@@ -12,7 +12,7 @@ namespace XLite\Module\XC\Onboarding\Model;
  * Product
  *
  */
- class Product extends \XLite\Module\XC\ProductTags\Model\Product implements \XLite\Base\IDecorator
+ class Product extends \XLite\Module\XC\ThemeTweaker\Model\Product implements \XLite\Base\IDecorator
 {
     /**
      * Flag, if the product participates in the sale

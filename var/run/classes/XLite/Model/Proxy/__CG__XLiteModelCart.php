@@ -94,10 +94,10 @@ class Cart extends \XLite\Model\Cart implements \Doctrine\ORM\Proxy\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'usedCoupons', 'uspsShipment', 'capostParcels', 'capostReturns', 'capostOffice', 'mailchimpStoreId', 'not_finished_order', 'demo', 'reviewKey', 'conversation', 'xpaymentsFraudStatus', 'xpaymentsFraudType', 'xpaymentsFraudCheckTransactionId', 'xpaymentsFraudCheckData', 'xpaymentsCards', 'order_id', 'profile', 'orig_profile', 'shipping_id', 'shipping_method_name', 'payment_method_name', 'tracking', 'date', 'lastRenewDate', 'paymentStatus', 'shippingStatus', 'notes', 'adminNotes', 'details', 'trackingNumbers', 'events', 'items', 'surcharges', 'payment_transactions', 'currency', 'orderNumber', 'recent', 'addItemError', 'oldPaymentStatus', 'isRemoving', 'oldShippingStatus', 'modifiers', 'shippingProcessor', 'isNotificationSent', 'ignoreCustomerNotifications', 'isNotificationsAllowedFlag', 'statusIsSet', 'paymentTransactionSums', 'sourceAddress', 'xcPendingExport', 'backorderCompetitors', 'backorderProductAmounts', 'temporary', 'total', 'subtotal', '_previous_state'];
+            return ['__isInitialized__', 'uspsShipment', 'capostParcels', 'capostReturns', 'capostOffice', 'mailchimpStoreId', 'demo', 'xpaymentsFraudStatus', 'xpaymentsFraudType', 'xpaymentsFraudCheckTransactionId', 'xpaymentsFraudCheckData', 'xpaymentsCards', 'order_id', 'profile', 'orig_profile', 'shipping_id', 'shipping_method_name', 'payment_method_name', 'tracking', 'date', 'lastRenewDate', 'paymentStatus', 'shippingStatus', 'notes', 'adminNotes', 'details', 'trackingNumbers', 'events', 'items', 'surcharges', 'payment_transactions', 'currency', 'orderNumber', 'recent', 'addItemError', 'oldPaymentStatus', 'isRemoving', 'oldShippingStatus', 'modifiers', 'shippingProcessor', 'isNotificationSent', 'ignoreCustomerNotifications', 'isNotificationsAllowedFlag', 'statusIsSet', 'paymentTransactionSums', 'sourceAddress', 'xcPendingExport', 'backorderCompetitors', 'backorderProductAmounts', 'temporary', 'total', 'subtotal', '_previous_state'];
         }
 
-        return ['__isInitialized__', 'usedCoupons', 'uspsShipment', 'capostParcels', 'capostReturns', 'capostOffice', 'mailchimpStoreId', 'not_finished_order', 'demo', 'reviewKey', 'conversation', 'xpaymentsFraudStatus', 'xpaymentsFraudType', 'xpaymentsFraudCheckTransactionId', 'xpaymentsFraudCheckData', 'xpaymentsCards', 'order_id', 'profile', 'orig_profile', 'shipping_id', 'shipping_method_name', 'payment_method_name', 'tracking', 'date', 'lastRenewDate', 'paymentStatus', 'shippingStatus', 'notes', 'adminNotes', 'details', 'trackingNumbers', 'events', 'items', 'surcharges', 'payment_transactions', 'currency', 'orderNumber', 'recent', 'addItemError', 'oldPaymentStatus', 'isRemoving', 'oldShippingStatus', 'modifiers', 'shippingProcessor', 'isNotificationSent', 'ignoreCustomerNotifications', 'isNotificationsAllowedFlag', 'statusIsSet', 'paymentTransactionSums', 'sourceAddress', 'xcPendingExport', 'backorderCompetitors', 'backorderProductAmounts', 'temporary', 'total', 'subtotal', '_previous_state'];
+        return ['__isInitialized__', 'uspsShipment', 'capostParcels', 'capostReturns', 'capostOffice', 'mailchimpStoreId', 'demo', 'xpaymentsFraudStatus', 'xpaymentsFraudType', 'xpaymentsFraudCheckTransactionId', 'xpaymentsFraudCheckData', 'xpaymentsCards', 'order_id', 'profile', 'orig_profile', 'shipping_id', 'shipping_method_name', 'payment_method_name', 'tracking', 'date', 'lastRenewDate', 'paymentStatus', 'shippingStatus', 'notes', 'adminNotes', 'details', 'trackingNumbers', 'events', 'items', 'surcharges', 'payment_transactions', 'currency', 'orderNumber', 'recent', 'addItemError', 'oldPaymentStatus', 'isRemoving', 'oldShippingStatus', 'modifiers', 'shippingProcessor', 'isNotificationSent', 'ignoreCustomerNotifications', 'isNotificationsAllowedFlag', 'statusIsSet', 'paymentTransactionSums', 'sourceAddress', 'xcPendingExport', 'backorderCompetitors', 'backorderProductAmounts', 'temporary', 'total', 'subtotal', '_previous_state'];
     }
 
     /**
@@ -234,72 +234,6 @@ class Cart extends \XLite\Model\Cart implements \Doctrine\ORM\Proxy\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'processSucceed', []);
 
         return parent::processSucceed();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function unsetPaymentMethod()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'unsetPaymentMethod', []);
-
-        return parent::unsetPaymentMethod();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setPaymentStatus($paymentStatus = NULL)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setPaymentStatus', [$paymentStatus]);
-
-        return parent::setPaymentStatus($paymentStatus);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function processNotFinishedOrder($placeMode = false)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'processNotFinishedOrder', [$placeMode]);
-
-        return parent::processNotFinishedOrder($placeMode);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isOpen()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isOpen', []);
-
-        return parent::isOpen();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function closeNotFinishedOrder()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'closeNotFinishedOrder', []);
-
-        return parent::closeNotFinishedOrder();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function removeNotFinishedOrder($force = false)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeNotFinishedOrder', [$force]);
-
-        return parent::removeNotFinishedOrder($force);
     }
 
     /**
@@ -580,116 +514,6 @@ class Cart extends \XLite\Model\Cart implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
-    public function cloneEntity()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'cloneEntity', []);
-
-        return parent::cloneEntity();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addCoupon(\XLite\Module\CDev\Coupons\Model\Coupon $coupon)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addCoupon', [$coupon]);
-
-        return parent::addCoupon($coupon);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function removeUsedCoupon(\XLite\Module\CDev\Coupons\Model\UsedCoupon $usedCoupon)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeUsedCoupon', [$usedCoupon]);
-
-        return parent::removeUsedCoupon($usedCoupon);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function containsCoupon(\XLite\Module\CDev\Coupons\Model\Coupon $coupon)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'containsCoupon', [$coupon]);
-
-        return parent::containsCoupon($coupon);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function hasSingleUseCoupon()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'hasSingleUseCoupon', []);
-
-        return parent::hasSingleUseCoupon();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addUsedCoupons(\XLite\Module\CDev\Coupons\Model\UsedCoupon $usedCoupons)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addUsedCoupons', [$usedCoupons]);
-
-        return parent::addUsedCoupons($usedCoupons);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getUsedCoupons()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUsedCoupons', []);
-
-        return parent::getUsedCoupons();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getValidItemsByCoupon(\XLite\Module\CDev\Coupons\Model\Coupon $coupon)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getValidItemsByCoupon', [$coupon]);
-
-        return parent::getValidItemsByCoupon($coupon);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getPrivateAttachments()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPrivateAttachments', []);
-
-        return parent::getPrivateAttachments();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getDownloadAttachments($availableOnly = true)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getDownloadAttachments', [$availableOnly]);
-
-        return parent::getDownloadAttachments($availableOnly);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function getEventFingerprint(array $exclude = array (
 ))
     {
@@ -702,45 +526,78 @@ class Cart extends \XLite\Model\Cart implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
-    public function hasPinCodes()
+    public function getPaymentMethod()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'hasPinCodes', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPaymentMethod', []);
 
-        return parent::hasPinCodes();
+        return parent::getPaymentMethod();
     }
 
     /**
      * {@inheritDoc}
      */
-    public function acquirePINCodes()
+    public function getOnlyExpressCheckoutIfAvailable()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'acquirePINCodes', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getOnlyExpressCheckoutIfAvailable', []);
 
-        return parent::acquirePINCodes();
+        return parent::getOnlyExpressCheckoutIfAvailable();
     }
 
     /**
      * {@inheritDoc}
      */
-    public function isAllowToProcessPinCodes()
+    public function isExpressCheckout($method)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isAllowToProcessPinCodes', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isExpressCheckout', [$method]);
 
-        return parent::isAllowToProcessPinCodes();
+        return parent::isExpressCheckout($method);
     }
 
     /**
      * {@inheritDoc}
      */
-    public function processPINCodes()
+    public function isPaypalForMarketplaces($method)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'processPINCodes', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isPaypalForMarketplaces', [$method]);
 
-        return parent::processPINCodes();
+        return parent::isPaypalForMarketplaces($method);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function isPaypalCredit($method)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isPaypalCredit', [$method]);
+
+        return parent::isPaypalCredit($method);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getTransactionIds()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getTransactionIds', []);
+
+        return parent::getTransactionIds();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function isPaypalMethod($method)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isPaypalMethod', [$method]);
+
+        return parent::isPaypalMethod($method);
     }
 
     /**
@@ -1065,160 +922,6 @@ class Cart extends \XLite\Model\Cart implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
-    public function isNotFinishedOrder()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isNotFinishedOrder', []);
-
-        return parent::isNotFinishedOrder();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getPrintableOrderNumber()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPrintableOrderNumber', []);
-
-        return parent::getPrintableOrderNumber();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isExpiredTTL()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isExpiredTTL', []);
-
-        return parent::isExpiredTTL();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getPaymentMethod()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPaymentMethod', []);
-
-        return parent::getPaymentMethod();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getPaidTotals()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPaidTotals', []);
-
-        return parent::getPaidTotals();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function sendOrderCreatedIfNeeded()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'sendOrderCreatedIfNeeded', []);
-
-        return parent::sendOrderCreatedIfNeeded();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setNotFinishedOrder(\XLite\Model\Order $notFinishedOrder = NULL)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setNotFinishedOrder', [$notFinishedOrder]);
-
-        return parent::setNotFinishedOrder($notFinishedOrder);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getNotFinishedOrder()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getNotFinishedOrder', []);
-
-        return parent::getNotFinishedOrder();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getOnlyExpressCheckoutIfAvailable()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getOnlyExpressCheckoutIfAvailable', []);
-
-        return parent::getOnlyExpressCheckoutIfAvailable();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isExpressCheckout($method)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isExpressCheckout', [$method]);
-
-        return parent::isExpressCheckout($method);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isPaypalForMarketplaces($method)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isPaypalForMarketplaces', [$method]);
-
-        return parent::isPaypalForMarketplaces($method);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isPaypalCredit($method)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isPaypalCredit', [$method]);
-
-        return parent::isPaypalCredit($method);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getTransactionIds()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getTransactionIds', []);
-
-        return parent::getTransactionIds();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isPaypalMethod($method)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isPaypalMethod', [$method]);
-
-        return parent::isPaypalMethod($method);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function isDemo()
     {
 
@@ -1252,133 +955,12 @@ class Cart extends \XLite\Model\Cart implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
-    public function createReviewKey()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'createReviewKey', []);
-
-        return parent::createReviewKey();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getReviewKey()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getReviewKey', []);
-
-        return parent::getReviewKey();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setReviewKey($value)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setReviewKey', [$value]);
-
-        return parent::setReviewKey($value);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function isStripeMethod($method)
     {
 
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'isStripeMethod', [$method]);
 
         return parent::isStripeMethod($method);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getConversation()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getConversation', []);
-
-        return parent::getConversation();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setConversation($conversation)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setConversation', [$conversation]);
-
-        return parent::setConversation($conversation);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getOrderConversation()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getOrderConversation', []);
-
-        return parent::getOrderConversation();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getNameForMessages()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getNameForMessages', []);
-
-        return parent::getNameForMessages();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function buildNewMessage($author, $body = '')
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'buildNewMessage', [$author, $body]);
-
-        return parent::buildNewMessage($author, $body);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getMessages()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getMessages', []);
-
-        return parent::getMessages();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isOrderMessagesEnabled()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isOrderMessagesEnabled', []);
-
-        return parent::isOrderMessagesEnabled();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function countUnreadMessages(\XLite\Model\Profile $profile = NULL)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'countUnreadMessages', [$profile]);
-
-        return parent::countUnreadMessages($profile);
     }
 
     /**
@@ -1659,6 +1241,17 @@ class Cart extends \XLite\Model\Cart implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
+    public function getPrintableOrderNumber()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPrintableOrderNumber', []);
+
+        return parent::getPrintableOrderNumber();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function isProcessed()
     {
 
@@ -1731,6 +1324,17 @@ class Cart extends \XLite\Model\Cart implements \Doctrine\ORM\Proxy\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'cloneOrderAsTemporary', []);
 
         return parent::cloneOrderAsTemporary();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function cloneEntity()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'cloneEntity', []);
+
+        return parent::cloneEntity();
     }
 
     /**
@@ -1901,6 +1505,17 @@ class Cart extends \XLite\Model\Cart implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
+    public function sendOrderCreatedIfNeeded()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'sendOrderCreatedIfNeeded', []);
+
+        return parent::sendOrderCreatedIfNeeded();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function sendOrderWaitingForApproveIfNeeded()
     {
 
@@ -2055,6 +1670,17 @@ class Cart extends \XLite\Model\Cart implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
+    public function unsetPaymentMethod()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'unsetPaymentMethod', []);
+
+        return parent::unsetPaymentMethod();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function getActivePaymentTransactions()
     {
 
@@ -2099,12 +1725,34 @@ class Cart extends \XLite\Model\Cart implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
+    public function getPaidTotals()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPaidTotals', []);
+
+        return parent::getPaidTotals();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function getPaidTotal()
     {
 
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPaidTotal', []);
 
         return parent::getPaidTotal();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function isOpen()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isOpen', []);
+
+        return parent::isOpen();
     }
 
     /**
@@ -2479,6 +2127,17 @@ class Cart extends \XLite\Model\Cart implements \Doctrine\ORM\Proxy\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getShippingStatusCode', []);
 
         return parent::getShippingStatusCode();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setPaymentStatus($paymentStatus = NULL)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setPaymentStatus', [$paymentStatus]);
+
+        return parent::setPaymentStatus($paymentStatus);
     }
 
     /**

@@ -13,7 +13,7 @@ namespace XLite\Module\CDev\SimpleCMS\Logic\Sitemap;
  *
  * @Decorator\Depend ("CDev\XMLSitemap")
  */
- class Generator extends \XLite\Module\XC\News\Logic\Sitemap\Generator implements \XLite\Base\IDecorator
+ class Generator extends \XLite\Module\CDev\XMLSitemap\Logic\Sitemap\GeneratorAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Return steps list

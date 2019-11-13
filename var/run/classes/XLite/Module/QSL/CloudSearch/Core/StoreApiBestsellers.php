@@ -15,7 +15,7 @@ use XLite\Model\Product;
  *
  * @Decorator\Depend ({"CDev\Bestsellers"})
  */
-abstract class StoreApiBestsellers extends \XLite\Module\QSL\CloudSearch\Core\StoreApiProductAdvisor implements \XLite\Base\IDecorator
+abstract class StoreApiBestsellers extends \XLite\Module\QSL\CloudSearch\Core\StoreApiAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Get "conditions" that can be used to restrict the results when searching.

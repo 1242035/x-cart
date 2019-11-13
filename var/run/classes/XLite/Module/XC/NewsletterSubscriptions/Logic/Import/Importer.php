@@ -11,7 +11,7 @@ namespace XLite\Module\XC\NewsletterSubscriptions\Logic\Import;
 /**
  * Importer
  */
- class Importer extends \XLite\Module\XC\Reviews\Logic\Import\Importer implements \XLite\Base\IDecorator
+ class Importer extends \XLite\Logic\Import\ImporterAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Get processor list

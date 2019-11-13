@@ -11,7 +11,7 @@ namespace XLite\Module\XC\Onboarding\View\Model;
 /**
  * Category view model
  */
- class Category extends \XLite\Module\XC\ProductFilter\View\Model\Category implements \XLite\Base\IDecorator
+ class Category extends \XLite\View\Model\CategoryAbstract implements \XLite\Base\IDecorator
 {
     protected function performActionUpdate()
     {

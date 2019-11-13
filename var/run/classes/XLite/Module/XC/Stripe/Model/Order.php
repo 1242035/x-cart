@@ -11,7 +11,7 @@ namespace XLite\Module\XC\Stripe\Model;
 /**
  * Order model
  */
- class Order extends \XLite\Module\XC\VendorMessages\Model\Order implements \XLite\Base\IDecorator
+ class Order extends \XLite\Module\XPay\XPaymentsCloud\Model\Order implements \XLite\Base\IDecorator
 {
     /**
      * Called when an order successfully placed by a client

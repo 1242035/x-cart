@@ -11,7 +11,7 @@ namespace XLite\Module\XC\Onboarding\View\FormModel\Product;
 /**
  * Product form model
  */
- class Info extends \XLite\Module\XC\ProductTags\View\FormModel\Product\Info implements \XLite\Base\IDecorator
+ class Info extends \XLite\Module\XC\ThemeTweaker\View\FormModel\Product\Info implements \XLite\Base\IDecorator
 {
     /**
      * @return array

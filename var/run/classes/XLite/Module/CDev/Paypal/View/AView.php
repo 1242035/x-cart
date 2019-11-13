@@ -11,7 +11,7 @@ namespace XLite\Module\CDev\Paypal\View;
 /**
  * Abstarct widget
  */
-abstract class AView extends \XLite\Module\CDev\Sale\View\AView implements \XLite\Base\IDecorator
+abstract class AView extends \XLite\Module\CDev\SimpleCMS\View\AView implements \XLite\Base\IDecorator
 {
     /**
      * Get CSS files

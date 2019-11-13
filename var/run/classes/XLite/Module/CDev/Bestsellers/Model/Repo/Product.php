@@ -11,7 +11,7 @@ namespace XLite\Module\CDev\Bestsellers\Model\Repo;
 /**
  * The "OrderItem" model repository
  */
- class Product extends \XLite\Module\QSL\CloudSearch\Model\Repo\ProductProductAdvisor implements \XLite\Base\IDecorator
+ class Product extends \XLite\Module\XC\FacebookMarketing\Model\Repo\Product implements \XLite\Base\IDecorator
 {
     const SEARCH_BESTSELLERS = 'bestsellers';
 

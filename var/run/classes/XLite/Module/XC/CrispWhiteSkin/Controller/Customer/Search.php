@@ -11,7 +11,7 @@ namespace XLite\Module\XC\CrispWhiteSkin\Controller\Customer;
 /**
  * Products search
  */
- class Search extends \XLite\Module\XC\NextPreviousProduct\Controller\Customer\Search implements \XLite\Base\IDecorator
+ class Search extends \XLite\Controller\Customer\SearchAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Return the current page title (for the content area)

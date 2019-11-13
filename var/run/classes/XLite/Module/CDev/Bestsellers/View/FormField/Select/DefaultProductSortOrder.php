@@ -11,7 +11,7 @@ namespace XLite\Module\CDev\Bestsellers\View\FormField\Select;
 /**
  * Default products sort order selector
  */
-abstract class DefaultProductSortOrder extends \XLite\Module\CDev\ProductAdvisor\View\FormField\Select\DefaultProductSortOrder implements \XLite\Base\IDecorator
+abstract class DefaultProductSortOrder extends \XLite\View\FormField\Select\DefaultProductSortOrderAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Get default options

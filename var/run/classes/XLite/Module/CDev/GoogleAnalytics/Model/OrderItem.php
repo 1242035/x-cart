@@ -13,7 +13,7 @@ use XLite\Module\CDev\GoogleAnalytics\Logic\DataMapper\OrderItemDataMapper;
 /**
  * Something customer can put into his cart (sic!)
  */
- class OrderItem extends \XLite\Module\CDev\PINCodes\Model\OrderItem implements \XLite\Base\IDecorator
+ class OrderItem extends \XLite\Module\CDev\SalesTax\Model\OrderItem implements \XLite\Base\IDecorator
 {
     /**
      * Category added name

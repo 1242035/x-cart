@@ -12,7 +12,7 @@ namespace XLite\Module\XC\Onboarding\Model;
  * Product
  *
  */
- class Order extends \XLite\Module\XC\Reviews\Model\Order implements \XLite\Base\IDecorator
+ class Order extends \XLite\Module\XC\Stripe\Model\Order implements \XLite\Base\IDecorator
 {
     /**
      * Flag, if the product participates in the sale

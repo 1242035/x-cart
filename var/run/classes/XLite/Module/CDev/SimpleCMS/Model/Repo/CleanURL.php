@@ -11,7 +11,7 @@ namespace XLite\Module\CDev\SimpleCMS\Model\Repo;
 /**
  * Clean URL repository
  */
- class CleanURL extends \XLite\Module\XC\News\Model\Repo\CleanURL implements \XLite\Base\IDecorator
+ class CleanURL extends \XLite\Model\Repo\CleanURLAbstract implements \XLite\Base\IDecorator
 {
     const STATIC_PAGE_URL_FORMAT_NO_EXT = 'domain/goalpage';
     const STATIC_PAGE_URL_FORMAT_EXT = 'domain/goalpage.html';

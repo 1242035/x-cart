@@ -11,7 +11,7 @@ namespace XLite\Module\XC\ThemeTweaker\Model\Repo;
 /**
  * Order repository
  */
- class Order extends \XLite\Module\XC\VendorMessages\Model\Repo\Order implements \XLite\Base\IDecorator
+ class Order extends \XLite\Model\Repo\OrderAbstract implements \XLite\Base\IDecorator
 {
     /**
      * @return \XLite\Core\CommonCell

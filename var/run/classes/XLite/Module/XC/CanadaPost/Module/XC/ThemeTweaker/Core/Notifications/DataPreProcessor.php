@@ -16,7 +16,7 @@ use XLite\Module\XC\CanadaPost\Model\ProductsReturn\Item as ReturnItem;
  *
  * @Decorator\Depend("XC\ThemeTweaker")
  */
- class DataPreProcessor extends \XLite\Module\XC\Reviews\Module\XC\ThemeTweaker\Core\Notifications\DataPreProcessor implements \XLite\Base\IDecorator
+ class DataPreProcessor extends \XLite\Module\XC\ThemeTweaker\Core\Notifications\DataPreProcessorAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Prepare data to pass to constructor XLite\Module\XC\Reviews\Core\Mail\OrderReviewKey

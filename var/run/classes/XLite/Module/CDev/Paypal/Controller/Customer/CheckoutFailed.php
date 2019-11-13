@@ -11,7 +11,7 @@ namespace XLite\Module\CDev\Paypal\Controller\Customer;
 /**
  * Checkout controller
  */
- class CheckoutFailed extends \XLite\Module\XC\NotFinishedOrders\Controller\Customer\CheckoutFailed implements \XLite\Base\IDecorator
+ class CheckoutFailed extends \XLite\Controller\Customer\CheckoutFailedAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Preprocessor for no-action run

@@ -11,7 +11,7 @@ namespace XLite\Module\XC\ThemeTweaker\View\Menu\Admin;
 /**
  * Left menu widget
  */
-abstract class LeftMenu extends \XLite\Module\XC\UpdateInventory\View\Menu\Admin\LeftMenu implements \XLite\Base\IDecorator
+abstract class LeftMenu extends \XLite\View\Menu\Admin\LeftMenuAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Define items

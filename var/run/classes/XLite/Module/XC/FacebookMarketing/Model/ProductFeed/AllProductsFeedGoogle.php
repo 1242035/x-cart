@@ -13,7 +13,7 @@ namespace XLite\Module\XC\FacebookMarketing\Model\ProductFeed;
  *
  * @Decorator\Depend("XC\GoogleFeed")
  */
- class AllProductsFeedGoogle extends \XLite\Module\XC\FacebookMarketing\Model\ProductFeed\AllProductsFeedSale implements \XLite\Base\IDecorator
+ class AllProductsFeedGoogle extends \XLite\Module\XC\FacebookMarketing\Model\ProductFeed\AllProductsFeedAbstract implements \XLite\Base\IDecorator
 {
     const GOOGLE_ATTRIBUTE_DATA_GETTER = 'getEntityGoogleAttributeData';
 

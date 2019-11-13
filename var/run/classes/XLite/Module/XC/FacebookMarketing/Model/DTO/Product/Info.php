@@ -9,7 +9,7 @@
 namespace XLite\Module\XC\FacebookMarketing\Model\DTO\Product;
 
 
- class Info extends \XLite\Module\XC\FreeShipping\Model\DTO\Product\Info implements \XLite\Base\IDecorator
+ class Info extends \XLite\Module\XC\GoogleFeed\Model\DTO\Product\Info implements \XLite\Base\IDecorator
 {
     /**
      * @inheritdoc

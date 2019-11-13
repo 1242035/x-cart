@@ -11,7 +11,7 @@ namespace XLite\Module\CDev\SalesTax\View\Menu\Admin;
 /**
  * Menu
  */
-abstract class AAdmin extends \XLite\Module\XC\Upselling\View\Menu\AAdmin implements \XLite\Base\IDecorator
+abstract class AAdmin extends \XLite\View\Menu\Admin\AAdminAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Define and set handler attributes; initialize handler

@@ -11,7 +11,7 @@ namespace XLite\Module\CDev\MarketPrice\Model;
 /**
  * Product 
  */
- class Product extends \XLite\Module\CDev\MarketPrice\Module\CDev\Sale\Model\Product implements \XLite\Base\IDecorator
+ class Product extends \XLite\Module\QSL\CloudSearch\Model\IndexingEventTriggers\Product implements \XLite\Base\IDecorator
 {
     /**
      * Product market price

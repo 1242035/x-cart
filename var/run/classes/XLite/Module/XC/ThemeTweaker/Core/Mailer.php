@@ -14,7 +14,7 @@ use XLite\Core\Mail\Registry;
 /**
  * Mailer
  */
- class Mailer extends \XLite\Module\XC\VendorMessages\Core\Mailer implements \XLite\Base\IDecorator
+ class Mailer extends \XLite\Core\MailerAbstract implements \XLite\Base\IDecorator
 {
     /**
      * @param $templatesDirectory

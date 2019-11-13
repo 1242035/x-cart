@@ -94,10 +94,10 @@ class Attribute extends \XLite\Model\Attribute implements \Doctrine\ORM\Proxy\Pr
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'googleShoppingGroup', 'visible', 'id', 'position', 'decimals', 'productClass', 'attributeGroup', 'attribute_options', 'product', 'type', 'addToNew', 'attribute_properties', 'editLanguage', 'translations', '_previous_state'];
+            return ['__isInitialized__', 'googleShoppingGroup', 'id', 'position', 'decimals', 'productClass', 'attributeGroup', 'attribute_options', 'product', 'type', 'addToNew', 'attribute_properties', 'editLanguage', 'translations', '_previous_state'];
         }
 
-        return ['__isInitialized__', 'googleShoppingGroup', 'visible', 'id', 'position', 'decimals', 'productClass', 'attributeGroup', 'attribute_options', 'product', 'type', 'addToNew', 'attribute_properties', 'editLanguage', 'translations', '_previous_state'];
+        return ['__isInitialized__', 'googleShoppingGroup', 'id', 'position', 'decimals', 'productClass', 'attributeGroup', 'attribute_options', 'product', 'type', 'addToNew', 'attribute_properties', 'editLanguage', 'translations', '_previous_state'];
     }
 
     /**
@@ -256,39 +256,6 @@ class Attribute extends \XLite\Model\Attribute implements \Doctrine\ORM\Proxy\Pr
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setGoogleShoppingGroup', [$key]);
 
         return parent::setGoogleShoppingGroup($key);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getFilterWidgetClass()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFilterWidgetClass', []);
-
-        return parent::getFilterWidgetClass();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setVisible($visible)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setVisible', [$visible]);
-
-        return parent::setVisible($visible);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getVisible()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getVisible', []);
-
-        return parent::getVisible();
     }
 
     /**

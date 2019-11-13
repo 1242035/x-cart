@@ -3,4 +3,4 @@ namespace XLite\Logic\ImageResize;
 /**
  * ImageResize
  */
-class Generator extends \XLite\Module\CDev\ProductAdvisor\Logic\ImageResize\Generator {}
+class Generator extends \XLite\Module\QSL\FlyoutCategoriesMenu\Logic\ImageResize\Generator {}

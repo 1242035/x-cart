@@ -94,10 +94,10 @@ class Method extends \XLite\Model\Shipping\Method implements \Doctrine\ORM\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'free', 'method_id', 'processor', 'carrier', 'code', 'enabled', 'position', 'shipping_markups', 'taxClass', 'added', 'moduleName', 'fromMarketplace', 'iconURL', 'tableType', 'handlingFee', 'handlingFeeType', 'editLanguage', 'translations', '_previous_state'];
+            return ['__isInitialized__', 'method_id', 'processor', 'carrier', 'code', 'enabled', 'position', 'shipping_markups', 'taxClass', 'added', 'moduleName', 'fromMarketplace', 'iconURL', 'tableType', 'handlingFee', 'handlingFeeType', 'editLanguage', 'translations', '_previous_state'];
         }
 
-        return ['__isInitialized__', 'free', 'method_id', 'processor', 'carrier', 'code', 'enabled', 'position', 'shipping_markups', 'taxClass', 'added', 'moduleName', 'fromMarketplace', 'iconURL', 'tableType', 'handlingFee', 'handlingFeeType', 'editLanguage', 'translations', '_previous_state'];
+        return ['__isInitialized__', 'method_id', 'processor', 'carrier', 'code', 'enabled', 'position', 'shipping_markups', 'taxClass', 'added', 'moduleName', 'fromMarketplace', 'iconURL', 'tableType', 'handlingFee', 'handlingFeeType', 'editLanguage', 'translations', '_previous_state'];
     }
 
     /**
@@ -234,28 +234,6 @@ class Method extends \XLite\Model\Shipping\Method implements \Doctrine\ORM\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setEnabled', [$enabled]);
 
         return parent::setEnabled($enabled);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setFree($free)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setFree', [$free]);
-
-        return parent::setFree($free);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getFree()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFree', []);
-
-        return parent::getFree();
     }
 
     /**

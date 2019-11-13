@@ -16,7 +16,7 @@ use XLite\Core\Config;
  *
  * @Decorator\Depend ("CDev\XMLSitemap")
  */
- class SitemapIterator extends \XLite\Module\XC\News\Logic\SitemapIterator implements \XLite\Base\IDecorator
+ class SitemapIterator extends \XLite\Module\CDev\XMLSitemap\Logic\SitemapIteratorAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Get current data

@@ -11,7 +11,7 @@ namespace XLite\Module\XC\GoogleFeed\Model\Repo;
 /**
  * Products repository
  */
-abstract class Attribute extends \XLite\Module\XC\ProductFilter\Model\Repo\Attribute implements \XLite\Base\IDecorator
+abstract class Attribute extends \XLite\Model\Repo\AttributeAbstract implements \XLite\Base\IDecorator
 {
     /**
      * @param $ids

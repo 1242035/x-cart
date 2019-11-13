@@ -11,7 +11,7 @@ namespace XLite\Module\QSL\CloudSearch\View\Model;
 /**
  * General settings widget extension
  */
- class Settings extends \XLite\Module\XC\NotFinishedOrders\View\Model\Settings implements \XLite\Base\IDecorator
+ class Settings extends \XLite\View\Model\SettingsAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Get CSS files

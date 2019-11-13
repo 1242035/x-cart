@@ -3,4 +3,4 @@ namespace XLite\Controller\Customer;
 /**
  * Product
  */
-class Product extends \XLite\Module\CDev\ProductAdvisor\Controller\Customer\Product {}
+class Product extends \XLite\Module\XC\ThemeTweaker\Controller\Customer\Product {}

@@ -94,10 +94,10 @@ class Profile extends \XLite\Model\Profile implements \Doctrine\ORM\Proxy\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'socialLoginProvider', 'socialLoginId', 'gaClientId', 'braintree_customer_id', 'braintreeCreditCards', 'braintreeCreditCardsHash', 'saveCardBoxChecked', 'conciergeUserId', 'mail_chimp_lists', 'mail_chimp_interests', 'mail_chimp_segments', 'conversations', 'xpaymentsCustomerId', 'cards', 'profile_id', 'login', 'password', 'password_hint', 'password_hint_answer', 'passwordResetKey', 'passwordResetKeyDate', 'access_level', 'cms_profile_id', 'cms_name', 'added', 'first_login', 'last_login', 'status', 'statusComment', 'referer', 'order', 'event', 'language', 'last_shipping_id', 'last_payment_id', 'membership', 'pending_membership', 'addresses', 'roles', 'orders_count', 'anonymous', 'forceChangePassword', 'dateOfLoginAttempt', 'countOfLoginAttempts', 'searchFakeField', 'xcPendingExport', 'lastCheckoutEmail', '_previous_state'];
+            return ['__isInitialized__', 'socialLoginProvider', 'socialLoginId', 'gaClientId', 'braintree_customer_id', 'braintreeCreditCards', 'braintreeCreditCardsHash', 'saveCardBoxChecked', 'conciergeUserId', 'mail_chimp_lists', 'mail_chimp_interests', 'mail_chimp_segments', 'xpaymentsCustomerId', 'cards', 'profile_id', 'login', 'password', 'password_hint', 'password_hint_answer', 'passwordResetKey', 'passwordResetKeyDate', 'access_level', 'cms_profile_id', 'cms_name', 'added', 'first_login', 'last_login', 'status', 'statusComment', 'referer', 'order', 'event', 'language', 'last_shipping_id', 'last_payment_id', 'membership', 'pending_membership', 'addresses', 'roles', 'orders_count', 'anonymous', 'forceChangePassword', 'dateOfLoginAttempt', 'countOfLoginAttempts', 'searchFakeField', 'xcPendingExport', 'lastCheckoutEmail', '_previous_state'];
         }
 
-        return ['__isInitialized__', 'socialLoginProvider', 'socialLoginId', 'gaClientId', 'braintree_customer_id', 'braintreeCreditCards', 'braintreeCreditCardsHash', 'saveCardBoxChecked', 'conciergeUserId', 'mail_chimp_lists', 'mail_chimp_interests', 'mail_chimp_segments', 'conversations', 'xpaymentsCustomerId', 'cards', 'profile_id', 'login', 'password', 'password_hint', 'password_hint_answer', 'passwordResetKey', 'passwordResetKeyDate', 'access_level', 'cms_profile_id', 'cms_name', 'added', 'first_login', 'last_login', 'status', 'statusComment', 'referer', 'order', 'event', 'language', 'last_shipping_id', 'last_payment_id', 'membership', 'pending_membership', 'addresses', 'roles', 'orders_count', 'anonymous', 'forceChangePassword', 'dateOfLoginAttempt', 'countOfLoginAttempts', 'searchFakeField', 'xcPendingExport', 'lastCheckoutEmail', '_previous_state'];
+        return ['__isInitialized__', 'socialLoginProvider', 'socialLoginId', 'gaClientId', 'braintree_customer_id', 'braintreeCreditCards', 'braintreeCreditCardsHash', 'saveCardBoxChecked', 'conciergeUserId', 'mail_chimp_lists', 'mail_chimp_interests', 'mail_chimp_segments', 'xpaymentsCustomerId', 'cards', 'profile_id', 'login', 'password', 'password_hint', 'password_hint_answer', 'passwordResetKey', 'passwordResetKeyDate', 'access_level', 'cms_profile_id', 'cms_name', 'added', 'first_login', 'last_login', 'status', 'statusComment', 'referer', 'order', 'event', 'language', 'last_shipping_id', 'last_payment_id', 'membership', 'pending_membership', 'addresses', 'roles', 'orders_count', 'anonymous', 'forceChangePassword', 'dateOfLoginAttempt', 'countOfLoginAttempts', 'searchFakeField', 'xcPendingExport', 'lastCheckoutEmail', '_previous_state'];
     }
 
     /**
@@ -520,72 +520,6 @@ class Profile extends \XLite\Model\Profile implements \Doctrine\ORM\Proxy\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getMailChimpInterests', []);
 
         return parent::getMailChimpInterests();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addConversation($conversation)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addConversation', [$conversation]);
-
-        return parent::addConversation($conversation);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getConversations()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getConversations', []);
-
-        return parent::getConversations();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function countUnreadMessages()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'countUnreadMessages', []);
-
-        return parent::countUnreadMessages();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function countOwnUnreadMessages()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'countOwnUnreadMessages', []);
-
-        return parent::countOwnUnreadMessages();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getNameForMessages()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getNameForMessages', []);
-
-        return parent::getNameForMessages();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getVendorNameForMessages()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getVendorNameForMessages', []);
-
-        return parent::getVendorNameForMessages();
     }
 
     /**

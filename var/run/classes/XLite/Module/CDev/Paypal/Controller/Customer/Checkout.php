@@ -13,7 +13,7 @@ use \XLite\Module\CDev\Paypal;
 /**
  * Checkout controller
  */
- class Checkout extends \XLite\Module\XPay\XPaymentsCloud\Controller\Customer\Checkout implements \XLite\Base\IDecorator
+ class Checkout extends \XLite\Module\QSL\BraintreeVZ\Controller\Customer\Checkout implements \XLite\Base\IDecorator
 {
     /**
      * Define the actions with no secure token

@@ -12,7 +12,7 @@ namespace XLite\Module\XC\FacebookMarketing\Logic\Import\Processor;
 /**
  * Products
  */
- class Products extends \XLite\Module\XC\FreeShipping\Logic\Import\Processor\Products implements \XLite\Base\IDecorator
+ class Products extends \XLite\Logic\Import\Processor\ProductsAbstract implements \XLite\Base\IDecorator
 {
     // {{{ Columns
 

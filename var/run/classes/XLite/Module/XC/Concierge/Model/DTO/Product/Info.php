@@ -14,7 +14,7 @@ use XLite\Module\XC\Concierge\Core\Track\Product;
 /**
  * Product
  */
-abstract class Info extends \XLite\Module\XC\CustomProductTabs\Model\DTO\Product\Info implements \XLite\Base\IDecorator
+abstract class Info extends \XLite\Module\XC\FacebookMarketing\Model\DTO\Product\Info implements \XLite\Base\IDecorator
 {
     /**
      * @param \XLite\Model\Product $object

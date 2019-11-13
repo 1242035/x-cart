@@ -11,7 +11,7 @@ namespace XLite\Module\XC\NewsletterSubscriptions\Logic\Export;
 /**
  * Generator
  */
- class Generator extends \XLite\Module\XC\Reviews\Logic\Export\Generator implements \XLite\Base\IDecorator
+ class Generator extends \XLite\Logic\Export\GeneratorAbstract implements \XLite\Base\IDecorator
 {
 /**
      * Define steps

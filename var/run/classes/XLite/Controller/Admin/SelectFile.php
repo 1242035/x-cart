@@ -3,4 +3,4 @@ namespace XLite\Controller\Admin;
 /**
  * Select File controller
  */
-class SelectFile extends \XLite\Module\CDev\FileAttachments\Controller\Admin\SelectFile {}
+class SelectFile extends \XLite\Module\CDev\SimpleCMS\Controller\Admin\SelectFile {}

@@ -11,7 +11,7 @@ namespace XLite\Module\XC\Onboarding\Model\Repo;
 /**
  * The "product" model repository
  */
- class Product extends \XLite\Module\XC\ProductFilter\Model\Repo\Product implements \XLite\Base\IDecorator
+ class Product extends \XLite\Module\XC\ThemeTweaker\Model\Repo\Product implements \XLite\Base\IDecorator
 {
     public function getDemoEntitiesCount()
     {

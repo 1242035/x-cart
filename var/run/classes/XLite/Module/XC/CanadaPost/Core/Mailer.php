@@ -14,7 +14,7 @@ use XLite\Module\XC\CanadaPost\Core\Mail\ProductsReturnRejected;
 /**
  * Mailer
  */
-abstract class Mailer extends \XLite\Module\XC\Reviews\Core\Mailer implements \XLite\Base\IDecorator
+abstract class Mailer extends \XLite\Module\XC\ThemeTweaker\Core\Mailer implements \XLite\Base\IDecorator
 {
     /**
      * Send mail notification to customer that his products return has been approved

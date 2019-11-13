@@ -9,7 +9,7 @@
 namespace XLite\Module\XC\CanadaPost\Core\Mail;
 
 
- class Registry extends \XLite\Module\XC\Reviews\Core\Mail\Registry implements \XLite\Base\IDecorator
+ class Registry extends \XLite\Core\Mail\RegistryAbstract implements \XLite\Base\IDecorator
 {
     protected static function getNotificationsList()
     {

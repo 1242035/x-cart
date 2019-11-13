@@ -15,7 +15,7 @@ use XLite\Module\QSL\CloudSearch\Core\IndexingEvent\IndexingEventListener;
 /**
  * Import step
  */
- class Import extends \XLite\Module\XC\CustomProductTabs\Logic\Import\Step\Import implements \XLite\Base\IDecorator
+ class Import extends \XLite\Logic\Import\Step\ImportAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Initialize

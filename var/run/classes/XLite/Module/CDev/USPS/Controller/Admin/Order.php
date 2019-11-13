@@ -15,7 +15,7 @@ use XLite\Module\CDev\USPS\Model\Shipping\PBAPI\Request\RequestException;
 use XLite\Module\CDev\USPS\Model\Shipping\PBAPI\TokenStorage\FactoryException;
 use XLite\Module\CDev\USPS\View\Model\CreateShipment;
 
- class Order extends \XLite\Module\CDev\VolumeDiscounts\Controller\Admin\Order implements \XLite\Base\IDecorator
+ class Order extends \XLite\Module\XC\CanadaPost\Controller\Admin\Order implements \XLite\Base\IDecorator
 {
     /**
      * Page key

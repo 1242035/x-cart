@@ -11,7 +11,7 @@ namespace XLite\Module\QSL\CloudSearch\View\Menu\Admin\Info;
 /**
  * Left side menu widget
  */
- class Menu extends \XLite\Module\XC\FreeShipping\View\Menu\Admin\Info\Menu implements \XLite\Base\IDecorator
+ class Menu extends \XLite\View\Menu\Admin\Info\MenuAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Define menu items

@@ -16,7 +16,7 @@ use XLite\Core\Converter;
  *
  * @Decorator\Depend ("CDev\SimpleCMS")
  */
- class Menu extends \XLite\Module\CDev\PINCodes\Model\Menu implements \XLite\Base\IDecorator
+ class Menu extends \XLite\Module\CDev\SimpleCMS\Model\MenuAbstract implements \XLite\Base\IDecorator
 {
     use ExecuteCachedTrait;
 

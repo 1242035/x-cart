@@ -12,7 +12,7 @@ namespace XLite\Module\XC\FacebookMarketing\Logic\Export\Step;
 /**
  * Products
  */
- class Products extends \XLite\Module\XC\FreeShipping\Logic\Export\Step\Products implements \XLite\Base\IDecorator
+ class Products extends \XLite\Logic\Export\Step\ProductsAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Define columns

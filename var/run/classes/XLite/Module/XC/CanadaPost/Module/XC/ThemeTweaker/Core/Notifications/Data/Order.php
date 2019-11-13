@@ -14,7 +14,7 @@ namespace XLite\Module\XC\CanadaPost\Module\XC\ThemeTweaker\Core\Notifications\D
  *
  * @Decorator\Depend("XC\ThemeTweaker")
  */
- class Order extends \XLite\Module\XC\Reviews\Module\XC\ThemeTweaker\Core\Notifications\Data\Order implements \XLite\Base\IDecorator
+ class Order extends \XLite\Module\XC\ThemeTweaker\Core\Notifications\Data\OrderAbstract implements \XLite\Base\IDecorator
 {
     protected function getTemplateDirectories()
     {

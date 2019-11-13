@@ -16,7 +16,7 @@ use XLite\Module\XC\CanadaPost\Model\ProductsReturn\Item as ReturnItem;
  *
  * @Decorator\Depend("XC\ThemeTweaker")
  */
- class StaticProvider extends \XLite\Module\XC\Reviews\Module\XC\ThemeTweaker\Core\Notifications\StaticProvider implements \XLite\Base\IDecorator
+ class StaticProvider extends \XLite\Module\XC\ThemeTweaker\Core\Notifications\StaticProviderAbstract implements \XLite\Base\IDecorator
 {
     /**
      * @inheritdoc

@@ -8,7 +8,7 @@
 
 namespace XLite\Module\CDev\MarketPrice\View\FormModel\Product;
 
- class Info extends \XLite\Module\CDev\PINCodes\View\FormModel\Product\Info implements \XLite\Base\IDecorator
+ class Info extends \XLite\Module\XC\FacebookMarketing\View\FormModel\Product\Info implements \XLite\Base\IDecorator
 {
     /**
      * @return array

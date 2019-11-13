@@ -13,7 +13,7 @@ use XLite\Model\Payment\Transaction;
 /**
  * Order model
  */
- class Order extends \XLite\Module\XC\Onboarding\Model\Order implements \XLite\Base\IDecorator
+ class Order extends \XLite\Module\CDev\USPS\Model\Order implements \XLite\Base\IDecorator
 {
     /**
      * Called when an order successfully placed by a client

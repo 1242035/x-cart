@@ -94,10 +94,10 @@ class Product extends \XLite\Model\Product implements \Doctrine\ORM\Proxy\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'featuredProducts', 'attachments', 'useCustomOG', 'marketPrice', 'pinCodesEnabled', 'autoPinCodes', 'pinCodes', 'views_stats', 'purchase_stats', 'participateSale', 'discountType', 'salePriceValue', 'csLastUpdate', 'xcPendingBulkEdit', 'tabs', 'isCustomerAttachmentsAvailable', 'isCustomerAttachmentsRequired', 'facebookMarketingEnabled', 'freeShip', 'shipForFree', 'freightFixedFee', 'googleFeedEnabled', 'useAsSegmentCondition', 'demo', 'tags', 'reviews', 'reviewAddedByUser', 'votesCount', 'reviewsCount', 'averageRating', 'upsellingProducts', 'upsellingParentProducts', 'product_id', 'price', 'sku', 'enabled', 'weight', 'useSeparateBox', 'boxWidth', 'boxLength', 'boxHeight', 'itemsPerBox', 'free_shipping', 'taxable', 'arrivalDate', 'date', 'updateDate', 'needProcess', 'categoryProducts', 'order_items', 'images', 'inventoryEnabled', 'amount', 'lowLimitEnabledCustomer', 'lowLimitEnabled', 'lowLimitAmount', 'productClass', 'taxClass', 'attributes', 'attributeValueC', 'attributeValueT', 'attributeValueS', 'attributeValueH', 'attrSepTab', 'sold', 'quickData', 'attrValues', 'memberships', 'cleanURLs', 'metaDescType', 'sales', 'xcPendingExport', 'editLanguage', 'translations', '_previous_state', 'entityVersion'];
+            return ['__isInitialized__', 'featuredProducts', 'useCustomOG', 'marketPrice', 'csLastUpdate', 'facebookMarketingEnabled', 'googleFeedEnabled', 'useAsSegmentCondition', 'demo', 'product_id', 'price', 'sku', 'enabled', 'weight', 'useSeparateBox', 'boxWidth', 'boxLength', 'boxHeight', 'itemsPerBox', 'free_shipping', 'taxable', 'arrivalDate', 'date', 'updateDate', 'needProcess', 'categoryProducts', 'order_items', 'images', 'inventoryEnabled', 'amount', 'lowLimitEnabledCustomer', 'lowLimitEnabled', 'lowLimitAmount', 'productClass', 'taxClass', 'attributes', 'attributeValueC', 'attributeValueT', 'attributeValueS', 'attributeValueH', 'attrSepTab', 'sold', 'quickData', 'attrValues', 'memberships', 'cleanURLs', 'metaDescType', 'sales', 'xcPendingExport', 'editLanguage', 'translations', '_previous_state', 'entityVersion'];
         }
 
-        return ['__isInitialized__', 'featuredProducts', 'attachments', 'useCustomOG', 'marketPrice', 'pinCodesEnabled', 'autoPinCodes', 'pinCodes', 'views_stats', 'purchase_stats', 'participateSale', 'discountType', 'salePriceValue', 'csLastUpdate', 'xcPendingBulkEdit', 'tabs', 'isCustomerAttachmentsAvailable', 'isCustomerAttachmentsRequired', 'facebookMarketingEnabled', 'freeShip', 'shipForFree', 'freightFixedFee', 'googleFeedEnabled', 'useAsSegmentCondition', 'demo', 'tags', 'reviews', 'reviewAddedByUser', 'votesCount', 'reviewsCount', 'averageRating', 'upsellingProducts', 'upsellingParentProducts', 'product_id', 'price', 'sku', 'enabled', 'weight', 'useSeparateBox', 'boxWidth', 'boxLength', 'boxHeight', 'itemsPerBox', 'free_shipping', 'taxable', 'arrivalDate', 'date', 'updateDate', 'needProcess', 'categoryProducts', 'order_items', 'images', 'inventoryEnabled', 'amount', 'lowLimitEnabledCustomer', 'lowLimitEnabled', 'lowLimitAmount', 'productClass', 'taxClass', 'attributes', 'attributeValueC', 'attributeValueT', 'attributeValueS', 'attributeValueH', 'attrSepTab', 'sold', 'quickData', 'attrValues', 'memberships', 'cleanURLs', 'metaDescType', 'sales', 'xcPendingExport', 'editLanguage', 'translations', '_previous_state', 'entityVersion'];
+        return ['__isInitialized__', 'featuredProducts', 'useCustomOG', 'marketPrice', 'csLastUpdate', 'facebookMarketingEnabled', 'googleFeedEnabled', 'useAsSegmentCondition', 'demo', 'product_id', 'price', 'sku', 'enabled', 'weight', 'useSeparateBox', 'boxWidth', 'boxLength', 'boxHeight', 'itemsPerBox', 'free_shipping', 'taxable', 'arrivalDate', 'date', 'updateDate', 'needProcess', 'categoryProducts', 'order_items', 'images', 'inventoryEnabled', 'amount', 'lowLimitEnabledCustomer', 'lowLimitEnabled', 'lowLimitAmount', 'productClass', 'taxClass', 'attributes', 'attributeValueC', 'attributeValueT', 'attributeValueS', 'attributeValueH', 'attrSepTab', 'sold', 'quickData', 'attrValues', 'memberships', 'cleanURLs', 'metaDescType', 'sales', 'xcPendingExport', 'editLanguage', 'translations', '_previous_state', 'entityVersion'];
     }
 
     /**
@@ -228,50 +228,6 @@ class Product extends \XLite\Model\Product implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
-    public function cloneEntity()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'cloneEntity', []);
-
-        return parent::cloneEntity();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addAttachments(\XLite\Module\CDev\FileAttachments\Model\Product\Attachment $attachments)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addAttachments', [$attachments]);
-
-        return parent::addAttachments($attachments);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getAttachments()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getAttachments', []);
-
-        return parent::getAttachments();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getFilteredAttachments($profile = NULL)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFilteredAttachments', [$profile]);
-
-        return parent::getFilteredAttachments($profile);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function getOpenGraphMetaTags($preprocessed = true)
     {
 
@@ -322,303 +278,6 @@ class Product extends \XLite\Model\Product implements \Doctrine\ORM\Proxy\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getMarketPrice', []);
 
         return parent::getMarketPrice();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getDisplayPriceBeforeSale()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getDisplayPriceBeforeSale', []);
-
-        return parent::getDisplayPriceBeforeSale();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function hasManualPinCodes()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'hasManualPinCodes', []);
-
-        return parent::hasManualPinCodes();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getSoldPinCodesCount()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSoldPinCodesCount', []);
-
-        return parent::getSoldPinCodesCount();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getRemainingPinCodesCount()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getRemainingPinCodesCount', []);
-
-        return parent::getRemainingPinCodesCount();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function syncAmount()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'syncAmount', []);
-
-        return parent::syncAmount();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function prepareBeforeRemove()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'prepareBeforeRemove', []);
-
-        return parent::prepareBeforeRemove();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setPinCodesEnabled($pinCodesEnabled)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setPinCodesEnabled', [$pinCodesEnabled]);
-
-        return parent::setPinCodesEnabled($pinCodesEnabled);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getPinCodesEnabled()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPinCodesEnabled', []);
-
-        return parent::getPinCodesEnabled();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setAutoPinCodes($autoPinCodes)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setAutoPinCodes', [$autoPinCodes]);
-
-        return parent::setAutoPinCodes($autoPinCodes);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getAutoPinCodes()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getAutoPinCodes', []);
-
-        return parent::getAutoPinCodes();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addPinCodes(\XLite\Module\CDev\PINCodes\Model\PinCode $pinCodes)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addPinCodes', [$pinCodes]);
-
-        return parent::addPinCodes($pinCodes);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getPinCodes()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPinCodes', []);
-
-        return parent::getPinCodes();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isNewProduct()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isNewProduct', []);
-
-        return parent::isNewProduct();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isUpcomingProduct()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isUpcomingProduct', []);
-
-        return parent::isUpcomingProduct();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isShowStockWarning()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isShowStockWarning', []);
-
-        return parent::isShowStockWarning();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addViewsStats(\XLite\Module\CDev\ProductAdvisor\Model\ProductStats $viewsStats)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addViewsStats', [$viewsStats]);
-
-        return parent::addViewsStats($viewsStats);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getViewsStats()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getViewsStats', []);
-
-        return parent::getViewsStats();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addPurchaseStats(\XLite\Module\CDev\ProductAdvisor\Model\ProductStats $purchaseStats)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addPurchaseStats', [$purchaseStats]);
-
-        return parent::addPurchaseStats($purchaseStats);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getPurchaseStats()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPurchaseStats', []);
-
-        return parent::getPurchaseStats();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getDiscountType()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getDiscountType', []);
-
-        return parent::getDiscountType();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getQuickDataPrice()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getQuickDataPrice', []);
-
-        return parent::getQuickDataPrice();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getNetPriceBeforeSale()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getNetPriceBeforeSale', []);
-
-        return parent::getNetPriceBeforeSale();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setParticipateSale($participateSale)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setParticipateSale', [$participateSale]);
-
-        return parent::setParticipateSale($participateSale);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getParticipateSale()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getParticipateSale', []);
-
-        return parent::getParticipateSale();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setDiscountType($discountType)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setDiscountType', [$discountType]);
-
-        return parent::setDiscountType($discountType);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setSalePriceValue($salePriceValue)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setSalePriceValue', [$salePriceValue]);
-
-        return parent::setSalePriceValue($salePriceValue);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getSalePriceValue()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSalePriceValue', []);
-
-        return parent::getSalePriceValue();
     }
 
     /**
@@ -701,94 +360,6 @@ class Product extends \XLite\Model\Product implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
-    public function addTabs(\XLite\Module\XC\CustomProductTabs\Model\Product\Tab $tabs)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addTabs', [$tabs]);
-
-        return parent::addTabs($tabs);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getTabs()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getTabs', []);
-
-        return parent::getTabs();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getGlobalTabs()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getGlobalTabs', []);
-
-        return parent::getGlobalTabs();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setIsCustomerAttachmentsAvailable($isCustomerAttachmentsAvailable)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setIsCustomerAttachmentsAvailable', [$isCustomerAttachmentsAvailable]);
-
-        return parent::setIsCustomerAttachmentsAvailable($isCustomerAttachmentsAvailable);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getIsCustomerAttachmentsAvailable()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIsCustomerAttachmentsAvailable', []);
-
-        return parent::getIsCustomerAttachmentsAvailable();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setIsCustomerAttachmentsRequired($isCustomerAttachmentsRequired)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setIsCustomerAttachmentsRequired', [$isCustomerAttachmentsRequired]);
-
-        return parent::setIsCustomerAttachmentsRequired($isCustomerAttachmentsRequired);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getIsCustomerAttachmentsRequired()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIsCustomerAttachmentsRequired', []);
-
-        return parent::getIsCustomerAttachmentsRequired();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isCustomerAttachmentsMandatory()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isCustomerAttachmentsMandatory', []);
-
-        return parent::isCustomerAttachmentsMandatory();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function getFacebookMarketingEnabled()
     {
 
@@ -806,72 +377,6 @@ class Product extends \XLite\Model\Product implements \Doctrine\ORM\Proxy\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setFacebookMarketingEnabled', [$facebookMarketingEnabled]);
 
         return parent::setFacebookMarketingEnabled($facebookMarketingEnabled);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setFreeShip($freeShip)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setFreeShip', [$freeShip]);
-
-        return parent::setFreeShip($freeShip);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getFreeShip()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFreeShip', []);
-
-        return parent::getFreeShip();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isShipForFree()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isShipForFree', []);
-
-        return parent::isShipForFree();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setShipForFree($shipForFree)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setShipForFree', [$shipForFree]);
-
-        return parent::setShipForFree($shipForFree);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setFreightFixedFee($freightFixedFee)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setFreightFixedFee', [$freightFixedFee]);
-
-        return parent::setFreightFixedFee($freightFixedFee);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getFreightFixedFee()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFreightFixedFee', []);
-
-        return parent::getFreightFixedFee();
     }
 
     /**
@@ -927,6 +432,17 @@ class Product extends \XLite\Model\Product implements \Doctrine\ORM\Proxy\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'prepareBeforeUpdate', []);
 
         return parent::prepareBeforeUpdate();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function prepareBeforeRemove()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'prepareBeforeRemove', []);
+
+        return parent::prepareBeforeRemove();
     }
 
     /**
@@ -998,215 +514,6 @@ class Product extends \XLite\Model\Product implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
-    public function addTags(\XLite\Module\XC\ProductTags\Model\Tag $tags)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addTags', [$tags]);
-
-        return parent::addTags($tags);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addTag(\XLite\Module\XC\ProductTags\Model\Tag $tag)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addTag', [$tag]);
-
-        return parent::addTag($tag);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getTags()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getTags', []);
-
-        return parent::getTags();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addTagsByTags($tags)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addTagsByTags', [$tags]);
-
-        return parent::addTagsByTags($tags);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function removeTagsByTags($tags)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeTagsByTags', [$tags]);
-
-        return parent::removeTagsByTags($tags);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function replaceTagsByTags($tags)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'replaceTagsByTags', [$tags]);
-
-        return parent::replaceTagsByTags($tags);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function hasTagByTag($tag)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'hasTagByTag', [$tag]);
-
-        return parent::hasTagByTag($tag);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getTagByTag($tag)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getTagByTag', [$tag]);
-
-        return parent::getTagByTag($tag);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getVotesCount()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getVotesCount', []);
-
-        return parent::getVotesCount();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getReviewsCount()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getReviewsCount', []);
-
-        return parent::getReviewsCount();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getAverageRating()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getAverageRating', []);
-
-        return parent::getAverageRating();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getRatings()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getRatings', []);
-
-        return parent::getRatings();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isEmptyAverageRating()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isEmptyAverageRating', []);
-
-        return parent::isEmptyAverageRating();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getMaxRatingValue()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getMaxRatingValue', []);
-
-        return parent::getMaxRatingValue();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getReviewAddedByUser(\XLite\Model\Profile $profile = NULL)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getReviewAddedByUser', [$profile]);
-
-        return parent::getReviewAddedByUser($profile);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isRatedByUser(\XLite\Model\Profile $profile = NULL)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isRatedByUser', [$profile]);
-
-        return parent::isRatedByUser($profile);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isReviewedByUser(\XLite\Model\Profile $profile = NULL)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isReviewedByUser', [$profile]);
-
-        return parent::isReviewedByUser($profile);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addReviews(\XLite\Module\XC\Reviews\Model\Review $reviews)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addReviews', [$reviews]);
-
-        return parent::addReviews($reviews);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getReviews()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getReviews', []);
-
-        return parent::getReviews();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function defineEditableProperties()
     {
 
@@ -1229,45 +536,23 @@ class Product extends \XLite\Model\Product implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
-    public function addUpsellingProducts(\XLite\Module\XC\Upselling\Model\UpsellingProduct $upsellingProducts)
+    public function getGlobalTabs()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addUpsellingProducts', [$upsellingProducts]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getGlobalTabs', []);
 
-        return parent::addUpsellingProducts($upsellingProducts);
+        return parent::getGlobalTabs();
     }
 
     /**
      * {@inheritDoc}
      */
-    public function getUpsellingProducts()
+    public function cloneEntity()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUpsellingProducts', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'cloneEntity', []);
 
-        return parent::getUpsellingProducts();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addUpsellingParentProducts(\XLite\Module\XC\Upselling\Model\UpsellingProduct $upsellingParentProducts)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addUpsellingParentProducts', [$upsellingParentProducts]);
-
-        return parent::addUpsellingParentProducts($upsellingParentProducts);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getUpsellingParentProducts()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUpsellingParentProducts', []);
-
-        return parent::getUpsellingParentProducts();
+        return parent::cloneEntity();
     }
 
     /**
@@ -1334,6 +619,17 @@ class Product extends \XLite\Model\Product implements \Doctrine\ORM\Proxy\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getDisplayPrice', []);
 
         return parent::getDisplayPrice();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getQuickDataPrice()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getQuickDataPrice', []);
+
+        return parent::getQuickDataPrice();
     }
 
     /**
@@ -1686,6 +982,17 @@ class Product extends \XLite\Model\Product implements \Doctrine\ORM\Proxy\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getItemsInCartMessage', []);
 
         return parent::getItemsInCartMessage();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function isShowStockWarning()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isShowStockWarning', []);
+
+        return parent::isShowStockWarning();
     }
 
     /**

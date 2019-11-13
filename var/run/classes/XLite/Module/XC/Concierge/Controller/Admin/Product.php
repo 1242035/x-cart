@@ -8,7 +8,7 @@
 
 namespace XLite\Module\XC\Concierge\Controller\Admin;
 
-abstract class Product extends \XLite\Module\XC\CustomProductTabs\Controller\Admin\Product implements \XLite\Base\IDecorator
+abstract class Product extends \XLite\Controller\Admin\ProductAbstract implements \XLite\Base\IDecorator
 {
     /**
      * return string

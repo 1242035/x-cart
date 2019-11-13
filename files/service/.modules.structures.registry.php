@@ -42,11 +42,11 @@ CDev-FileAttachments:
     dependencies: {  }
 CDev-GoSocial:
     tables: {  }
-    columns: { product_translations: { ogMeta: 'ogMeta LONGTEXT DEFAULT NULL' }, categories: { ogMeta: 'ogMeta LONGTEXT DEFAULT NULL', useCustomOG: 'useCustomOG TINYINT(1) NOT NULL' }, products: { useCustomOG: 'useCustomOG TINYINT(1) NOT NULL' }, pages: { useCustomOG: 'useCustomOG TINYINT(1) NOT NULL', ogMeta: 'ogMeta LONGTEXT DEFAULT NULL', showSocialButtons: 'showSocialButtons TINYINT(1) NOT NULL' }, page_translations: { ogMeta: 'ogMeta LONGTEXT NOT NULL' }, category_translations: { ogMeta: 'ogMeta LONGTEXT NOT NULL' } }
+    columns: { categories: { ogMeta: 'ogMeta LONGTEXT DEFAULT NULL', useCustomOG: 'useCustomOG TINYINT(1) NOT NULL' }, category_translations: { ogMeta: 'ogMeta LONGTEXT NOT NULL' }, pages: { useCustomOG: 'useCustomOG TINYINT(1) NOT NULL', ogMeta: 'ogMeta LONGTEXT DEFAULT NULL', showSocialButtons: 'showSocialButtons TINYINT(1) NOT NULL' }, page_translations: { ogMeta: 'ogMeta LONGTEXT NOT NULL' }, products: { useCustomOG: 'useCustomOG TINYINT(1) NOT NULL' }, product_translations: { ogMeta: 'ogMeta LONGTEXT DEFAULT NULL' } }
     dependencies: { CDev-SimpleCMS: { pages: { useCustomOG: 'useCustomOG TINYINT(1) NOT NULL', ogMeta: 'ogMeta LONGTEXT DEFAULT NULL', showSocialButtons: 'showSocialButtons TINYINT(1) NOT NULL' }, page_translations: { ogMeta: 'ogMeta LONGTEXT NOT NULL' } } }
 CDev-GoogleAnalytics:
     tables: {  }
-    columns: { profiles: { gaClientId: 'gaClientId VARCHAR(255) NOT NULL' }, order_items: { categoryAdded: 'categoryAdded VARCHAR(255) DEFAULT NULL' } }
+    columns: { order_items: { categoryAdded: 'categoryAdded VARCHAR(255) DEFAULT NULL' }, profiles: { gaClientId: 'gaClientId VARCHAR(255) NOT NULL' } }
     dependencies: {  }
 CDev-MarketPrice:
     tables: {  }
@@ -73,11 +73,11 @@ CDev-Sale:
     columns: { products: { participateSale: 'participateSale TINYINT(1) NOT NULL', discountType: 'discountType VARCHAR(32) NOT NULL', salePriceValue: 'salePriceValue NUMERIC(14, 4) NOT NULL' } }
     dependencies: {  }
 CDev-SalesTax:
-    tables: [sales_tax_translations, sales_taxes, sales_tax_rates]
+    tables: [sales_tax_rates, sales_taxes, sales_tax_translations]
     columns: {  }
     dependencies: {  }
 CDev-SimpleCMS:
-    tables: [page_images, menu_quick_flags, pages, menu_translations, page_translations, menus]
+    tables: [page_images, menu_quick_flags, menus, menu_translations, pages, page_translations]
     columns: { clean_urls: { page_id: 'page_id INT UNSIGNED DEFAULT NULL' } }
     dependencies: {  }
 CDev-TwoCheckout:
@@ -121,7 +121,7 @@ XC-BulkEditing:
     columns: { products: { xcPendingBulkEdit: 'xcPendingBulkEdit TINYINT(1) NOT NULL' } }
     dependencies: {  }
 XC-CanadaPost:
-    tables: [capost_return_link_storage, capost_return_items, capost_return_links, capost_delivery_service_options, capost_returns, order_capost_office, order_capost_parcels, order_capost_parcel_shipment_link_storage, order_capost_parcel_shipment_tracking_files, order_capost_parcel_shipment_tracking_events, order_capost_parcel_shipment_tracking_options, order_capost_parcel_shipment_links, order_capost_parcel_shipment_tracking, order_capost_parcel_manifests, order_capost_parcel_shipments_manifests, order_capost_parcel_shipment, order_capost_parcel_items, order_capost_parcel_manifest_link_storage, order_capost_parcel_manifest_links, capost_delivery_services]
+    tables: [k, capost_delivery_service_options, capost_delivery_services, order_capost_parcel_items, order_capost_parcel_manifest_link_storage, order_capost_parcel_manifest_links, order_capost_parcel_manifests, order_capost_parcel_shipments_manifests, order_capost_parcel_shipment_link_storage, order_capost_parcel_shipment_links, order_capost_parcel_shipment_tracking_options, order_capost_parcel_shipment_tracking_files, order_capost_parcel_shipment_tracking_events, order_capost_parcel_shipment_tracking, order_capost_parcel_shipment, order_capost_parcels, order_capost_office, capost_return_items, capost_return_link_storage, capost_return_links, capost_returns]
     columns: {  }
     dependencies: {  }
 XC-Concierge:
@@ -181,7 +181,7 @@ XC-IdealPayments:
     columns: {  }
     dependencies: {  }
 XC-MailChimp:
-    tables: [mailchimp_list_group_name, mailchimp_profile_interests, mailchimp_store, mailchimp_list_segments, segment_membership, segment_products, mailchimp_segment_subscriptions, mailchimp_list_group, mailchimp_lists, mailchimp_subscriptions]
+    tables: [mailchimp_list_group, mailchimp_list_group_name, mailchimp_profile_interests, mailchimp_lists, mailchimp_subscriptions, mailchimp_list_segments, segment_membership, segment_products, mailchimp_segment_subscriptions, mailchimp_store]
     columns: { orders: { mailchimpStoreId: 'mailchimpStoreId VARCHAR(255) NOT NULL' }, products: { useAsSegmentCondition: 'useAsSegmentCondition TINYINT(1) NOT NULL' } }
     dependencies: {  }
 XC-News:
@@ -202,7 +202,7 @@ XC-NotFinishedOrders:
     dependencies: {  }
 XC-Onboarding:
     tables: {  }
-    columns: { orders: { demo: 'demo TINYINT(1) NOT NULL' }, categories: { demo: 'demo TINYINT(1) NOT NULL' }, products: { demo: 'demo TINYINT(1) NOT NULL' } }
+    columns: { categories: { demo: 'demo TINYINT(1) NOT NULL' }, orders: { demo: 'demo TINYINT(1) NOT NULL' }, products: { demo: 'demo TINYINT(1) NOT NULL' } }
     dependencies: {  }
 XC-ProductComparison:
     tables: {  }
@@ -258,5 +258,9 @@ XC-VendorMessages:
     dependencies: {  }
 XPay-XPaymentsCloud:
     tables: [xpayments_fraud_check_data]
-    columns: { profiles: { xpaymentsCustomerId: 'xpaymentsCustomerId VARCHAR(255) NOT NULL' }, orders: { xpaymentsFraudStatus: 'xpaymentsFraudStatus VARCHAR(255) NOT NULL', xpaymentsFraudType: 'xpaymentsFraudType VARCHAR(255) NOT NULL', xpaymentsFraudCheckTransactionId: 'xpaymentsFraudCheckTransactionId INT NOT NULL' }, order_items: { xpaymentsEmulated: 'xpaymentsEmulated TINYINT(1) NOT NULL' } }
+    columns: { orders: { xpaymentsFraudStatus: 'xpaymentsFraudStatus VARCHAR(255) NOT NULL', xpaymentsFraudType: 'xpaymentsFraudType VARCHAR(255) NOT NULL', xpaymentsFraudCheckTransactionId: 'xpaymentsFraudCheckTransactionId INT NOT NULL' }, order_items: { xpaymentsEmulated: 'xpaymentsEmulated TINYINT(1) NOT NULL' }, profiles: { xpaymentsCustomerId: 'xpaymentsCustomerId VARCHAR(255) NOT NULL' } }
+    dependencies: {  }
+Viauco-Vietnamese:
+    tables: {  }
+    columns: {  }
     dependencies: {  }

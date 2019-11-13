@@ -11,7 +11,7 @@ namespace XLite\Module\XC\MailChimp\View\Tabs;
 /**
  * MailChimp subscriptions tab
  */
-abstract class Account extends \XLite\Module\XC\VendorMessages\View\Tabs\Account implements \XLite\Base\IDecorator
+abstract class Account extends \XLite\Module\XPay\XPaymentsCloud\View\Tabs\Account implements \XLite\Base\IDecorator
 {
     /**
      * Returns the list of targets where this widget is available

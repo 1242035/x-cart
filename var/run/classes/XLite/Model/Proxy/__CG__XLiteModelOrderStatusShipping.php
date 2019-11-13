@@ -217,17 +217,6 @@ class Shipping extends \XLite\Model\Order\Status\Shipping implements \Doctrine\O
     /**
      * {@inheritDoc}
      */
-    public function setName($name)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setName', [$name]);
-
-        return parent::setName($name);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function getId()
     {
         if ($this->__isInitialized__ === false) {

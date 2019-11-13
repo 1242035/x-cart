@@ -12,7 +12,7 @@ use XLite\Module\XC\MailChimp\Core\MailChimp;
 /**
  * The "profile" model class
  */
-abstract class Profile extends \XLite\Module\XC\VendorMessages\Model\Profile implements \XLite\Base\IDecorator
+abstract class Profile extends \XLite\Module\XPay\XPaymentsCloud\Model\Profile implements \XLite\Base\IDecorator
 {
     /**
      * MailChimp lists

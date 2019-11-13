@@ -13,7 +13,7 @@ use XLite\Module\CDev\ContactUs\Core\Mail\ContactUsMessage;
 /**
  * Mailer
  */
-abstract class Mailer extends \XLite\Module\CDev\Egoods\Core\Mailer implements \XLite\Base\IDecorator
+abstract class Mailer extends \XLite\Module\XC\CanadaPost\Core\Mailer implements \XLite\Base\IDecorator
 {
     /**
      * @param \XLite\Module\CDev\ContactUs\Model\Contact  $contact

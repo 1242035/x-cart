@@ -8,7 +8,7 @@
 
 namespace XLite\Module\XC\FacebookMarketing\View\Product;
 
- class ListItem extends \XLite\Module\XC\FreeShipping\View\Product\ListItem implements \XLite\Base\IDecorator
+ class ListItem extends \XLite\View\Product\ListItemAbstract implements \XLite\Base\IDecorator
 {
     /**
      * @return string

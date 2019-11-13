@@ -13,7 +13,7 @@ namespace XLite\Module\CDev\Paypal\Controller\Admin;
  *
  * @Decorator\Depend("XC\Onboarding")
  */
- class OnboardingWizardPaypal extends \XLite\Module\XC\Geolocation\Module\XC\Onboarding\Controller\Admin\OnboardingWizard implements \XLite\Base\IDecorator
+ class OnboardingWizardPaypal extends \XLite\Module\XC\Onboarding\Controller\Admin\OnboardingWizardAbstract implements \XLite\Base\IDecorator
 {
 
     public function doActionUpdateLocation()

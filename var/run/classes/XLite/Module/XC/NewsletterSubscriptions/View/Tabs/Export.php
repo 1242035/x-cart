@@ -11,7 +11,7 @@ namespace XLite\Module\XC\NewsletterSubscriptions\View\Tabs;
 /**
  * Tabs related to export page
  */
- class Export extends \XLite\Module\XC\Reviews\View\Tabs\Export implements \XLite\Base\IDecorator
+ class Export extends \XLite\View\Tabs\ExportAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Return widget default template

@@ -11,7 +11,7 @@ namespace XLite\Module\QSL\BraintreeVZ\View\Order\Details\Admin;
 /**
  * Order info 
  */
- class Info extends \XLite\Module\XC\CustomerAttachments\View\Order\Details\Admin\Info implements \XLite\Base\IDecorator
+ class Info extends \XLite\Module\XPay\XPaymentsCloud\View\Order\Details\Admin\Info implements \XLite\Base\IDecorator
 {
     /**
      * Braintree tranaction

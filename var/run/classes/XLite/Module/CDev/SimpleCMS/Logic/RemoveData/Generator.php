@@ -9,7 +9,7 @@
 namespace XLite\Module\CDev\SimpleCMS\Logic\RemoveData;
 
 
- class Generator extends \XLite\Module\CDev\VolumeDiscounts\Logic\RemoveData\Generator implements \XLite\Base\IDecorator
+ class Generator extends \XLite\Logic\RemoveData\GeneratorAbstract implements \XLite\Base\IDecorator
 {
     protected function getStepsList()
     {

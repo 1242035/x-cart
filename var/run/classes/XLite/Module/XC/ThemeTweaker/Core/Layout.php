@@ -13,7 +13,7 @@ use XLite\Module\XC\ThemeTweaker\Controller\Admin\NotificationEditor;
 /**
  * Layout manager
  */
- class Layout extends \XLite\Module\XC\VendorMessages\Core\Layout implements \XLite\Base\IDecorator
+ class Layout extends \XLite\Core\LayoutAbstract implements \XLite\Base\IDecorator
 {
     const THEME_TWEAKER_CUSTOMER_INTERFACE = 'theme_tweaker/customer';
     const THEME_TWEAKER_MAIL_INTERFACE = 'theme_tweaker/mail';

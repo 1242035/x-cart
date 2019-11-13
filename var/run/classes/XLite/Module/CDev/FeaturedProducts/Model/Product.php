@@ -11,7 +11,7 @@ namespace XLite\Module\CDev\FeaturedProducts\Model;
 /**
  * Product
  */
- class Product extends \XLite\Module\CDev\FileAttachments\Model\Product implements \XLite\Base\IDecorator
+ class Product extends \XLite\Module\CDev\GoSocial\Model\Product implements \XLite\Base\IDecorator
 {
     /**
      * Featured products (relation)

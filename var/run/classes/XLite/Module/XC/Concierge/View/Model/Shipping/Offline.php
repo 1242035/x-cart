@@ -11,7 +11,7 @@ namespace XLite\Module\XC\Concierge\View\Model\Shipping;
 use XLite\Module\XC\Concierge\Core\Mediator;
 use XLite\Module\XC\Concierge\Core\Track\ShippingMethod;
 
-abstract class Offline extends \XLite\Module\XC\FreeShipping\View\Model\Shipping\Offline implements \XLite\Base\IDecorator
+abstract class Offline extends \XLite\View\Model\Shipping\OfflineAbstract implements \XLite\Base\IDecorator
 {
     protected function postprocessSuccessActionCreate()
     {

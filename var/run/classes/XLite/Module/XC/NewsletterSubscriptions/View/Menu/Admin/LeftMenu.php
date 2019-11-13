@@ -11,7 +11,7 @@ namespace XLite\Module\XC\NewsletterSubscriptions\View\Menu\Admin;
 /**
  * Top menu widget
  */
-abstract class LeftMenu extends \XLite\Module\XC\ProductTags\View\Menu\Admin\LeftMenu implements \XLite\Base\IDecorator
+abstract class LeftMenu extends \XLite\Module\XC\ThemeTweaker\View\Menu\Admin\LeftMenu implements \XLite\Base\IDecorator
 {
     /**
      * Define items

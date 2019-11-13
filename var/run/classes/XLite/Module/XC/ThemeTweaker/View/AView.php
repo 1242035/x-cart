@@ -13,7 +13,7 @@ use XLite\Module\XC\ThemeTweaker\Core\ThemeTweaker;
 /**
  * Abstract widget
  */
-abstract class AView extends \XLite\Module\XC\VendorMessages\View\AView implements \XLite\Base\IDecorator
+abstract class AView extends \XLite\View\AViewAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Current templates tree

@@ -11,7 +11,7 @@ namespace XLite\Module\CDev\FeaturedProducts\Core;
 /**
  * CMSConnector
  */
-abstract class CMSConnector extends \XLite\Module\CDev\ProductAdvisor\Core\CMSConnector implements \XLite\Base\IDecorator
+abstract class CMSConnector extends \XLite\Core\CMSConnectorAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Constructor

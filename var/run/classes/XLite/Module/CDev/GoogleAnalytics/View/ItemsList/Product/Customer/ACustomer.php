@@ -15,7 +15,7 @@ use XLite\View\Product\ListItem;
 /**
  * Class ACustomer
  */
-abstract class ACustomer extends \XLite\Module\CDev\ProductAdvisor\View\ItemsList\Product\Customer\ACustomer implements \XLite\Base\IDecorator
+abstract class ACustomer extends \XLite\Module\XC\CrispWhiteSkin\View\ItemsList\Product\Customer\ACustomer implements \XLite\Base\IDecorator
 {
     /**
      * @var int

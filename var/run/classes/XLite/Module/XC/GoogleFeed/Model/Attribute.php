@@ -12,7 +12,7 @@ namespace XLite\Module\XC\GoogleFeed\Model;
  * Attribute
  *
  */
- class Attribute extends \XLite\Module\XC\ProductFilter\Model\Attribute implements \XLite\Base\IDecorator
+ class Attribute extends \XLite\Model\AttributeAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Shopping group key

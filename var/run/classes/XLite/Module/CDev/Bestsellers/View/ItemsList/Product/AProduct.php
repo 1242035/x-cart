@@ -11,7 +11,7 @@ namespace XLite\Module\CDev\Bestsellers\View\ItemsList\Product;
 /**
  * Product list
  */
-abstract class AProduct extends \XLite\Module\XC\ProductComparison\View\ItemsList\Product\AProduct implements \XLite\Base\IDecorator
+abstract class AProduct extends \XLite\View\ItemsList\Product\AProductAbstract implements \XLite\Base\IDecorator
 {
     /**
      * Allowed sort criteria

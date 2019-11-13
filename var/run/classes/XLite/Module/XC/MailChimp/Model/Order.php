@@ -11,7 +11,7 @@ namespace XLite\Module\XC\MailChimp\Model;
 use XLite\Module\XC\MailChimp\Core;
 use XLite\Module\XC\MailChimp\Core\MailChimp;
 
- class Order extends \XLite\Module\XC\NotFinishedOrders\Model\Order implements \XLite\Base\IDecorator
+ class Order extends \XLite\Module\XC\Onboarding\Model\Order implements \XLite\Base\IDecorator
 {
     /**
      * Mailchimp store id

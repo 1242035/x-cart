@@ -94,10 +94,10 @@ class GlobalTab extends \XLite\Model\Product\GlobalTab implements \Doctrine\ORM\
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'enabled', 'link', 'custom_tab', 'product_specific_aliases', 'id', 'position', 'service_name', 'providers', '_previous_state'];
+            return ['__isInitialized__', 'id', 'position', 'service_name', 'providers', '_previous_state'];
         }
 
-        return ['__isInitialized__', 'enabled', 'link', 'custom_tab', 'product_specific_aliases', 'id', 'position', 'service_name', 'providers', '_previous_state'];
+        return ['__isInitialized__', 'id', 'position', 'service_name', 'providers', '_previous_state'];
     }
 
     /**
@@ -206,116 +206,6 @@ class GlobalTab extends \XLite\Model\Product\GlobalTab implements \Doctrine\ORM\
     /**
      * {@inheritDoc}
      */
-    public function getEnabled()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEnabled', []);
-
-        return parent::getEnabled();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setEnabled($enabled)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setEnabled', [$enabled]);
-
-        return parent::setEnabled($enabled);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getLink()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getLink', []);
-
-        return parent::getLink();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setLink($link)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setLink', [$link]);
-
-        return parent::setLink($link);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getCustomTab()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCustomTab', []);
-
-        return parent::getCustomTab();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setCustomTab($custom_tab)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCustomTab', [$custom_tab]);
-
-        return parent::setCustomTab($custom_tab);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getProductSpecificAliases()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getProductSpecificAliases', []);
-
-        return parent::getProductSpecificAliases();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addProductSpecificAlias($product_specific_alias)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addProductSpecificAlias', [$product_specific_alias]);
-
-        return parent::addProductSpecificAlias($product_specific_alias);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isAvailable()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isAvailable', []);
-
-        return parent::isAvailable();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getName()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getName', []);
-
-        return parent::getName();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function getId()
     {
         if ($this->__isInitialized__ === false) {
@@ -414,6 +304,28 @@ class GlobalTab extends \XLite\Model\Product\GlobalTab implements \Doctrine\ORM\
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'checkProviders', []);
 
         return parent::checkProviders();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function isAvailable()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isAvailable', []);
+
+        return parent::isAvailable();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getName()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getName', []);
+
+        return parent::getName();
     }
 
     /**

@@ -11,7 +11,7 @@ namespace XLite\Module\XC\Concierge\View\ItemsList\Model\Shipping;
 use XLite\Module\XC\Concierge\Core\Mediator;
 use XLite\Module\XC\Concierge\Core\Track\ShippingMethod;
 
-abstract class Carriers extends \XLite\Module\XC\FreeShipping\View\ItemsList\Model\Shipping\Carriers implements \XLite\Base\IDecorator
+abstract class Carriers extends \XLite\View\ItemsList\Model\Shipping\CarriersAbstract implements \XLite\Base\IDecorator
 {
     /**
      * @param \XLite\Model\AEntity $entity

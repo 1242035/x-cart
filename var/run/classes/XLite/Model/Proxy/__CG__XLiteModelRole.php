@@ -94,10 +94,10 @@ class Role extends \XLite\Model\Role implements \Doctrine\ORM\Proxy\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'enabled', 'id', 'permissions', 'profiles', 'editLanguage', 'translations', '_previous_state'];
+            return ['__isInitialized__', 'id', 'permissions', 'profiles', 'editLanguage', 'translations', '_previous_state'];
         }
 
-        return ['__isInitialized__', 'enabled', 'id', 'permissions', 'profiles', 'editLanguage', 'translations', '_previous_state'];
+        return ['__isInitialized__', 'id', 'permissions', 'profiles', 'editLanguage', 'translations', '_previous_state'];
     }
 
     /**
@@ -206,56 +206,23 @@ class Role extends \XLite\Model\Role implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
-    public function isPermissionAllowed($code)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isPermissionAllowed', [$code]);
-
-        return parent::isPermissionAllowed($code);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function isPermanentRole()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isPermanentRole', []);
-
-        return parent::isPermanentRole();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setEnabled($enabled)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setEnabled', [$enabled]);
-
-        return parent::setEnabled($enabled);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getEnabled()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEnabled', []);
-
-        return parent::getEnabled();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function getPublicName()
     {
 
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPublicName', []);
 
         return parent::getPublicName();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function isPermissionAllowed($code)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isPermissionAllowed', [$code]);
+
+        return parent::isPermissionAllowed($code);
     }
 
     /**
