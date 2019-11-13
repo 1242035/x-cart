@@ -1,0 +1,10 @@
+classes/XLite/Module/Viauco/Vietnamese/Main.php
+classes/XLite/Module/Viauco/Vietnamese/install.yaml
+classes/XLite/Module/Viauco/Vietnamese/Core/Translation.php
+classes/XLite/Module/Viauco/Vietnamese/Core/TranslationLanguage/Vietnamese.php
+classes/XLite/Module/Viauco/Vietnamese/View/AView.php
+/skins/customer/modules/Viauco/Vietnamese/css/layout.css
+classes/XLite/Module/Viauco/Vietnamese/main.yaml
+classes/XLite/Module/Viauco/Vietnamese/hook/enable.php
+classes/XLite/Module/Viauco/Vietnamese/hook/disable.php
+classes/XLite/Module/Viauco/Vietnamese/hook/remove.php

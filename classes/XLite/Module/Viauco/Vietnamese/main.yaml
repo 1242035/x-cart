@@ -1,0 +1,17 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Metadata
+#
+# @link      http://www.x-cart.com/
+
+version: 5.4.1.0
+type: common
+authorName: 'Meo Chuot'
+moduleName: 'Vietnamese'
+description: 'X-Cart VietNamese Language package'
+minorRequiredCoreVersion: 0
+dependsOn: {  }
+incompatibleWith: {  }
+skins: {  }
+showSettingsForm: false
+canDisable: true

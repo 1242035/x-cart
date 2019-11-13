@@ -1,0 +1,46 @@
+1574242071
+s:1403:"O:34:"XLite\Core\View\DTO\RenderedWidget":3:{s:7:"content";s:1293:"<ul class="menu menu-tree catalog-categories catalog-categories-tree">
+      <li >
+      <a href="vi/fashion/" >Fashion</a>
+              <ul class="menu menu-tree">
+      <li >
+      <a href="vi/fashion/clothing/"  class="leaf">Clothing</a>
+          </li>
+      <li >
+      <a href="vi/fashion/shoes/"  class="leaf">Shoes</a>
+          </li>
+      <li >
+      <a href="vi/fashion/accessories/"  class="leaf">Accessories</a>
+          </li>
+    </ul>
+
+          </li>
+      <li >
+      <a href="vi/beauty-and-health/" >Beauty &amp; Health</a>
+              <ul class="menu menu-tree">
+      <li >
+      <a href="vi/beauty-and-health/cosmetics/"  class="leaf">Cosmetics</a>
+          </li>
+      <li >
+      <a href="vi/beauty-and-health/healthy-food-and-snacks/"  class="leaf">Healthy Food &amp; Snacks</a>
+          </li>
+    </ul>
+
+          </li>
+      <li >
+      <a href="vi/electronics/" >Electronics</a>
+              <ul class="menu menu-tree">
+      <li >
+      <a href="vi/electronics/smart-watches/"  class="leaf">Smart watches</a>
+          </li>
+      <li >
+      <a href="vi/electronics/mobile-phones/"  class="leaf">Mobile phones</a>
+          </li>
+      <li >
+      <a href="vi/electronics/other/"  class="leaf">Other</a>
+          </li>
+    </ul>
+
+          </li>
+    </ul>
+";s:6:"assets";a:0:{}s:8:"metaTags";a:0:{}}";
