@@ -1,0 +1,51 @@
+1574051857
+s:1494:"O:34:"XLite\Core\View\DTO\RenderedWidget":3:{s:7:"content";s:1384:"
+
+
+<div class="product productid-42 __dynamic_widget_placeholder__268_YToyOntzOjU6ImNsYXNzIjtzOjQ2OiJYTGl0ZVxWaWV3XFByb2R1Y3RcUHJvZHVjdEFkZGVkVG9DYXJ0Q2VsbENsYXNzIjtzOjY6InBhcmFtcyI7czoxMDc6ImE6NTp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czoxMDoicHJvZHVjdF9pZCI7aTo0Mjt9Ijt9">
+  <div class="product-photo">
+  <a
+  href="vi/perfect-snacks"
+  class="product-thumbnail">
+  <img class="photo" width="233" height="280" src="//x-cart.test/var/images/product/262.280/food_1.jpg" alt="Perfect Snacks" data-max-width="262" data-max-height="280" srcset="http://x-cart.test/var/images/product/524.560/food_1.jpg 2x" />
+
+</a>
+
+</div>
+<h5 class="product-name"><a class="fn url" href="vi/perfect-snacks">Perfect Snacks</a></h5>
+  <div class="infoBlock">
+      
+
+    
+<div class="product-price widget-fingerprint-product-price">
+  <ul class="product-price">
+    
+<li class="product-price-base"><span class="price product-price">$19.99</span></li>
+
+  </ul>
+</div>
+
+
+
+ <div class="buttons-container">
+    
+  <div class="add-to-cart-button">
+    
+    
+<button type="button" class="btn  regular-button add-to-cart product-add2cart productid-42">
+  
+    <span>Thêm vào giỏ hàng</span>
+</button>
+
+
+<input type="hidden" name="facebook_pixel_sku" class="facebook-pixel-sku-42" value="10000000118" />
+
+
+  </div>
+
+ </div>
+  </div>
+</div>
+
+
+";s:6:"assets";a:0:{}s:8:"metaTags";a:0:{}}";

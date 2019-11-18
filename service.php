@@ -17,5 +17,4 @@ $appFactory = require __DIR__ . '/service/src/App.php';
 
 /** @var \Silex\Application $app */
 $app = $appFactory($config->getData());
-
 $app->run(\XCart\Bus\Core\Request::createFromGlobals());

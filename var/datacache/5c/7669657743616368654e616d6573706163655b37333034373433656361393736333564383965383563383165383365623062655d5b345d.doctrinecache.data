@@ -1,0 +1,51 @@
+1574051857
+s:4237:"O:34:"XLite\Core\View\DTO\RenderedWidget":3:{s:7:"content";s:1536:"
+
+
+<div class="product productid-14 __dynamic_widget_placeholder__268_YToyOntzOjU6ImNsYXNzIjtzOjQ2OiJYTGl0ZVxWaWV3XFByb2R1Y3RcUHJvZHVjdEFkZGVkVG9DYXJ0Q2VsbENsYXNzIjtzOjY6InBhcmFtcyI7czoxMDc6ImE6NTp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czoxMDoicHJvZHVjdF9pZCI7aToxNDt9Ijt9">
+  <div class="product-photo">
+  <a
+  href="vi/multicolored-dress-with-balloon-sleeves"
+  class="product-thumbnail">
+  <img class="photo" width="233" height="280" src="//x-cart.test/var/images/product/262.280/clo_5.jpg" alt="Multicolored Dress with Balloon Sleeves [Options &amp; Attributes]" data-max-width="262" data-max-height="280" srcset="http://x-cart.test/var/images/product/524.560/clo_5.jpg 2x" />
+
+</a>
+
+</div>
+<h5 class="product-name"><a class="fn url" href="vi/multicolored-dress-with-balloon-sleeves">Multicolored Dress with Balloon Sleeves [Options &amp; Attributes]</a></h5>
+  <div class="infoBlock">
+      
+
+    
+<div class="product-price widget-fingerprint-product-price">
+  <ul class="product-price">
+    
+<li class="product-price-base"><span class="price product-price">$29.99</span></li>
+
+  </ul>
+</div>
+
+
+
+ <div class="buttons-container">
+    
+  <div class="add-to-cart-button">
+    
+    
+<button type="button" class="btn  regular-button add-to-cart product-add2cart productid-14">
+  
+    <span>Thêm vào giỏ hàng</span>
+</button>
+
+
+<input type="hidden" name="facebook_pixel_sku" class="facebook-pixel-sku-14" value="10000000087" />
+
+
+  </div>
+
+ </div>
+  </div>
+</div>
+
+
+";s:6:"assets";a:8:{i:0;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:2:{s:2:"js";a:0:{}s:3:"css";a:0:{}}s:5:"index";i:100;s:9:"interface";s:6:"common";s:5:"group";s:14:"getCommonFiles";}i:1;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:2:{s:2:"js";a:2:{i:0;s:31:"modules/QSL/CloudSearch/init.js";i:1;s:33:"modules/QSL/CloudSearch/loader.js";}s:3:"css";a:3:{i:0;s:29:"modules/CDev/Paypal/style.css";i:1;a:3:{s:4:"file";s:30:"modules/CDev/Paypal/style.less";s:5:"media";s:6:"screen";s:5:"merge";s:28:"bootstrap/css/bootstrap.less";}i:2;s:34:"modules/CDev/MarketPrice/style.css";}}s:5:"index";i:200;s:9:"interface";N;s:5:"group";s:12:"getResources";}i:2;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:2:{s:3:"css";a:3:{i:0;s:48:"modules/QSL/FlyoutCategoriesMenu/flyout-menu.css";i:1;a:3:{s:4:"file";s:46:"modules/QSL/FlyoutCategoriesMenu/css/grid.less";s:5:"media";s:6:"screen";s:5:"merge";s:28:"bootstrap/css/bootstrap.less";}i:2;s:37:"modules/CDev/SimpleCMS/page/style.css";}s:2:"js";a:1:{i:0;s:47:"modules/QSL/FlyoutCategoriesMenu/flyout-menu.js";}}s:5:"index";i:300;s:9:"interface";N;s:5:"group";s:13:"getThemeFiles";}i:3;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:0:{}s:5:"index";i:1000;s:9:"interface";s:6:"custom";s:5:"group";s:26:"getThemeTweakerCustomFiles";}i:4;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:2:{s:2:"js";a:0:{}s:3:"css";a:0:{}}s:5:"index";i:100;s:9:"interface";s:6:"common";s:5:"group";s:14:"getCommonFiles";}i:5;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:2:{s:2:"js";a:3:{i:0;s:31:"modules/QSL/CloudSearch/init.js";i:1;s:33:"modules/QSL/CloudSearch/loader.js";i:2;s:19:"button/js/button.js";}s:3:"css";a:4:{i:0;s:29:"modules/CDev/Paypal/style.css";i:1;a:3:{s:4:"file";s:30:"modules/CDev/Paypal/style.less";s:5:"media";s:6:"screen";s:5:"merge";s:28:"bootstrap/css/bootstrap.less";}i:2;s:21:"button/css/button.css";i:3;s:17:"button/style.less";}}s:5:"index";i:200;s:9:"interface";N;s:5:"group";s:12:"getResources";}i:6;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:2:{s:3:"css";a:3:{i:0;s:48:"modules/QSL/FlyoutCategoriesMenu/flyout-menu.css";i:1;a:3:{s:4:"file";s:46:"modules/QSL/FlyoutCategoriesMenu/css/grid.less";s:5:"media";s:6:"screen";s:5:"merge";s:28:"bootstrap/css/bootstrap.less";}i:2;s:37:"modules/CDev/SimpleCMS/page/style.css";}s:2:"js";a:1:{i:0;s:47:"modules/QSL/FlyoutCategoriesMenu/flyout-menu.js";}}s:5:"index";i:300;s:9:"interface";N;s:5:"group";s:13:"getThemeFiles";}i:7;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:0:{}s:5:"index";i:1000;s:9:"interface";s:6:"custom";s:5:"group";s:26:"getThemeTweakerCustomFiles";}}s:8:"metaTags";a:0:{}}";

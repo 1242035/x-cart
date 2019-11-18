@@ -1,5 +1,5 @@
-1574241193
-s:5799:"O:34:"XLite\Core\View\DTO\RenderedWidget":3:{s:7:"content";s:4323:"<div class="notification-menu" data-unread-count="2" data-menu-type="marketplaceMenuReadTimestamp">
+1574652881
+s:5802:"O:34:"XLite\Core\View\DTO\RenderedWidget":3:{s:7:"content";s:4326:"<div class="notification-menu" data-unread-count="2" data-menu-type="marketplaceMenuReadTimestamp">
       <ul class="menu">
               <li class="notification-item marketplace">
       <a href="http://x-cart.test/service.php?locale=en#/marketplace">
@@ -32,7 +32,7 @@ s:5799:"O:34:"XLite\Core\View\DTO\RenderedWidget":3:{s:7:"content";s:4323:"<div 
                 <a href="https://review.capterra.com/SS-X-Cart-33849-3111380954?utm_source=xc5admin&utm_medium=link2blog&utm_campaign=xc5adminlink2blog" target="_blank">
           <div class="message">
             <img src="https://my.x-cart.com/sites/default/files/news/images/Cap-Reviews-LeaveAReview-EmailSig.png" class="addon-icon" alt="If you haven&#039;t had a chance to leave your honest feedback for X-Cart yet, it&#039;s not too late! Only the first 100 users who write a qualifying review will receive a gift card, so write your review today." />
-            <div class="date">11/09/2019</div>
+            <div class="date">Sep 10, 2019</div>
             <div class="title">If you haven&#039;t had a chance to leave your honest feedback for X-Cart yet, it&#039;s not too late! Only the first 100 users who write a qualifying review will receive a gift card, so write your review today.</div>
           </div>
         </a>
@@ -41,7 +41,7 @@ s:5799:"O:34:"XLite\Core\View\DTO\RenderedWidget":3:{s:7:"content";s:4323:"<div 
                 <a href="https://market.x-cart.com/addons/google-ads-for-xcart.html?utm_source=marketplace&amp;utm_medium=newsfeed-popup&utm_source=xc5admin&utm_medium=link2blog&utm_campaign=xc5adminlink2blog" target="_blank">
           <div class="message">
             <img src="https://my.x-cart.com/sites/default/files/news/images/GA1.png" class="addon-icon" alt="FREE $150 Google credit goes with your first campaign. Install the addon, create your first campaign and get the credit for future Google Advertising campaigns." />
-            <div class="date">08/05/2019</div>
+            <div class="date">May 7, 2019</div>
             <div class="title">FREE $150 Google credit goes with your first campaign. Install the addon, create your first campaign and get the credit for future Google Advertising campaigns.</div>
           </div>
         </a>

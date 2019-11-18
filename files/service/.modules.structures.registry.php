@@ -260,7 +260,3 @@ XPay-XPaymentsCloud:
     tables: [xpayments_fraud_check_data]
     columns: { orders: { xpaymentsFraudStatus: 'xpaymentsFraudStatus VARCHAR(255) NOT NULL', xpaymentsFraudType: 'xpaymentsFraudType VARCHAR(255) NOT NULL', xpaymentsFraudCheckTransactionId: 'xpaymentsFraudCheckTransactionId INT NOT NULL' }, order_items: { xpaymentsEmulated: 'xpaymentsEmulated TINYINT(1) NOT NULL' }, profiles: { xpaymentsCustomerId: 'xpaymentsCustomerId VARCHAR(255) NOT NULL' } }
     dependencies: {  }
-Viauco-Vietnamese:
-    tables: {  }
-    columns: {  }
-    dependencies: {  }

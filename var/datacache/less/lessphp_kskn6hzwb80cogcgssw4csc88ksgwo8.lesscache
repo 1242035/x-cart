@@ -1,0 +1,8 @@
+<?php return  Array(0 =>  new Less_Tree_Comment('/* vim: set ts=2 sw=2 sts=2 et: */
+',false,36, Array('entryPath' => 'D:/x-cart/var/resources/admin/http/screen/','entryUri' => '','rootpath' => 'D:/x-cart/var/resources/admin/http/screen/','currentDirectory' => 'D:/x-cart/skins/admin/form_field/css/','currentUri' => '../../../../../skins/admin/form_field/css/rich.less','filename' => 'D:/x-cart/skins/admin/form_field/css/rich.less','uri_root' => '../../../../../skins/admin/form_field/css/',)),1 =>  new Less_Tree_Comment('/**
+ * Chosen styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+',false,213, Array('entryPath' => 'D:/x-cart/var/resources/admin/http/screen/','entryUri' => '','rootpath' => 'D:/x-cart/var/resources/admin/http/screen/','currentDirectory' => 'D:/x-cart/skins/admin/form_field/css/','currentUri' => '../../../../../skins/admin/form_field/css/rich.less','filename' => 'D:/x-cart/skins/admin/form_field/css/rich.less','uri_root' => '../../../../../skins/admin/form_field/css/',)),); ?>
